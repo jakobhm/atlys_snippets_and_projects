@@ -132,6 +132,11 @@ begin
    Port map ( SW_I    => input_sw,
               CLK     => system_clk,
               SW_O    => swDebounce_sw);
+			  
+   --#################################--
+   --###    PROCESS DEFINITIONS     ##--
+   --#################################--
+   
 				  
 	--################################--
    --###   PARALLEL ASSIGNEMENTS   ##--

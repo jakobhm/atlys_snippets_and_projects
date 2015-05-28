@@ -53,6 +53,15 @@
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="59"/>
     </file>
     <file xil_pn:name="../../snippets/frameGrabberEthernet/frameGrabberEthernetTB_TYPES.vhd" xil_pn:type="FILE_VHDL"/>
+    <file xil_pn:name="generateDataAndRepeat.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="70"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="70"/>
+    </file>
+    <file xil_pn:name="udpFrameGeneratorOutputFile.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="72"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="72"/>
+    </file>
+    <file xil_pn:name="generateDataAndRepeate_TYPES.vhd" xil_pn:type="FILE_VHDL"/>
   </files>
 
   <properties>

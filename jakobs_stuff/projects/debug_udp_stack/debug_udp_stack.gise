@@ -93,6 +93,7 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
@@ -170,83 +171,72 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.lso"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.ngc"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.ngr"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.prj"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.stx"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.syr"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.xst"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack_xst.xrpt"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1432831294" xil_pn:in_ck="-3200856748831823111" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3327820885158179372" xil_pn:start_ts="1432831294">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1432834896" xil_pn:in_ck="-5337516761611082925" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1835722467856132945" xil_pn:start_ts="1432834891">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.bld"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.ngd"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack_ngdbuild.xrpt"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1432834910" xil_pn:in_ck="-5337516761611082924" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="4245753365082497697" xil_pn:start_ts="1432834896">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.pcf"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack_map.map"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack_map.mrp"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack_map.ncd"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack_map.ngm"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack_map.xrpt"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack_summary.xml"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack_usage.xml"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1432834932" xil_pn:in_ck="-2113759573608711059" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1432834910">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.ncd"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.pad"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.par"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.ptwx"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.unroutes"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.xpi"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack_pad.csv"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack_pad.txt"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack_par.xrpt"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1432834953" xil_pn:in_ck="-167432952876082889" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1432834932">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.ut"/>
-      <outfile xil_pn:name="atlyswrapperdebugudpstack.bgn"/>
-      <outfile xil_pn:name="atlyswrapperdebugudpstack.bit"/>
-      <outfile xil_pn:name="atlyswrapperdebugudpstack.drc"/>
-      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1432834932" xil_pn:in_ck="-5337516761611083056" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1432834926">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.twr"/>
-      <outfile xil_pn:name="atlysWrapperDebugUDPStack.twx"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

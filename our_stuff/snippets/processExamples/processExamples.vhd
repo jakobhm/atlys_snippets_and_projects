@@ -22,9 +22,9 @@
    --###   PROCESS WITH REGISTERS   ##--
    --#################################--
    
-   -------------------------------------
-   --    doSomethingReg : process     --
-   -------------------------------------
+   ------------------------------------------
+   --    doSomethingReg_proc : process     --
+   ------------------------------------------
    -- INPUTS:
    --   system_areset            : std_logic;
    --   system_clk               : std_logic;
@@ -33,7 +33,7 @@
    --    doSomethingReg_bbbReg   : mySigType1;
    --    doSomethingReg_ccc      : std_logic;
    ----------------------------------------
-   doSomethingReg : process (system_areset, system_clk, input_sw)
+   doSomethingReg_proc : process (system_areset, system_clk, input_sw)
    begin
       if system_areset = '0' then
 	     doSomethingReg_aaaReg <= '0';
@@ -45,7 +45,7 @@
 	  else
 	     doSomethingReg_ccc    <= '0';
 	  end if;
-   end process doSomethingReg;
+   end process doSomethingReg_proc;
    
    
    
@@ -54,7 +54,7 @@
    --#################################--
    
    --------------------------------------
-   --    doSomethingComb : process     --
+   --    doSomethingComb_proc : process     --
    --------------------------------------
    -- INPUTS:
    --   input_sw
@@ -62,7 +62,7 @@
    --    doSomethingComb_ddd
    --    doSomethingComb_eee
    ----------------------------------------
-   doSomethingComb : process (input_sw)
+   doSomethingComb_proc : process (input_sw)
    begin
       if input_sw = "01010101" then
 	     doSomethingComb_ddd <= '1';
@@ -74,4 +74,4 @@
 	     doSomethingComb_ddd <= '0';
 		 doSomethingComb_eee <= '0';
 	  end if;
-   end process doSomethingReg;
+   end process doSomethingReg_proc;
