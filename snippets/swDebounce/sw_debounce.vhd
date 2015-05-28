@@ -14,6 +14,7 @@
 --
 -- Revision: 
 -- Revision 0.01 - File Created
+-- Revision 1.00 - functional test succesful
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
@@ -21,13 +22,13 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.std_logic_unsigned.all;
 
-entity sw_debounce is
+entity swDebounce is
     Port ( SW_I : in   STD_LOGIC_VECTOR (7 downto 0);
            CLK  : in   STD_LOGIC;
            SW_O : out  STD_LOGIC_VECTOR (7 downto 0));
-end sw_debounce;
+end swDebounce;
 
-architecture Behavioral of sw_debounce is
+architecture Behavioral of swDebounce is
 
 constant CNTR_MAX : std_logic_vector(15 downto 0) := (others => '1');
 
