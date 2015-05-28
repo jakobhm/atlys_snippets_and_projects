@@ -1,0 +1,3 @@
+work	"../../../Documents/GitHub/atlys_snippets_and_projects/snippets/btn_debounce/btn_debounce.vhd"
+work	"../../../Documents/GitHub/atlys_snippets_and_projects/snippets/sw_debounce/sw_debounce.vhd"
+work	"atlysWrapperDebugUDPStack.vhd"
