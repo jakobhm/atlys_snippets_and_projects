@@ -1,0 +1,6 @@
+vhdl isim_temp "../../../our_stuff/ip_cores/udp_ip_stack/trunk/rtl/vhdl/axi.vhd"
+vhdl isim_temp "../../../our_stuff/ip_cores/udp_ip_stack/trunk/rtl/vhdl/arp_types.vhd"
+vhdl isim_temp "../../../our_stuff/ip_cores/udp_ip_stack/trunk/rtl/vhdl/ipv4_types.vhd"
+vhdl isim_temp "../../snippets/frameGrabberEthernet/frameGrabberEthernetTB_TYPES.vhd"
+vhdl isim_temp "frameGrabberEthernet.vhd"
+vhdl isim_temp "../../snippets/frameGrabberEthernet/frameGrabberEthernetTB.vhd"

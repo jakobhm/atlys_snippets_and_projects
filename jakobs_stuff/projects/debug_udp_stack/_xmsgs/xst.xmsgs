@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 222: <arg fmt="%s" index="1">ram_parallel</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 244: <arg fmt="%s" index="1">ram_parallel</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 257: <arg fmt="%s" index="1">ram_parallel</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 265: <arg fmt="%s" index="1">ram_seq</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 278: <arg fmt="%s" index="1">ram_seq</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 142: Assignment to <arg fmt="%s" index="1">ram_seq_areset</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 343: Assignment to <arg fmt="%s" index="1">ram_seq_dout</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 371: <arg fmt="%s" index="1">ram_parallel_din</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 368: Assignment to <arg fmt="%s" index="1">ram_parallel_dout</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 225: Assignment to <arg fmt="%s" index="1">input_phyrxer</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 227: Assignment to <arg fmt="%s" index="1">input_phymdi</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 228: Assignment to <arg fmt="%s" index="1">input_phyint</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 138: Net &lt;<arg fmt="%s" index="1">output_phytxclk</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 143: Net &lt;<arg fmt="%s" index="1">output_phymdc</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">phyrxer</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">phyint</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd</arg>&quot; line <arg fmt="%s" index="2">165</arg>: Output port &lt;<arg fmt="%s" index="3">BTN_O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">btnDebounceComp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd</arg>&quot; line <arg fmt="%s" index="2">177</arg>: Output port &lt;<arg fmt="%s" index="3">udp_txi_hdr_dst_ip_addr</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">frameGrabberEthernetComp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd</arg>&quot; line <arg fmt="%s" index="2">177</arg>: Output port &lt;<arg fmt="%s" index="3">udp_txi_hdr_dst_port</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">frameGrabberEthernetComp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd</arg>&quot; line <arg fmt="%s" index="2">177</arg>: Output port &lt;<arg fmt="%s" index="3">udp_txi_hdr_src_port</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">frameGrabberEthernetComp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd</arg>&quot; line <arg fmt="%s" index="2">177</arg>: Output port &lt;<arg fmt="%s" index="3">udp_txi_hdr_data_length</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">frameGrabberEthernetComp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd</arg>&quot; line <arg fmt="%s" index="2">177</arg>: Output port &lt;<arg fmt="%s" index="3">udp_txi_hdr_checksum</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">frameGrabberEthernetComp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd</arg>&quot; line <arg fmt="%s" index="2">177</arg>: Output port &lt;<arg fmt="%s" index="3">udp_tx_start</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">frameGrabberEthernetComp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd</arg>&quot; line <arg fmt="%s" index="2">177</arg>: Output port &lt;<arg fmt="%s" index="3">udp_txi_data_data_out_last</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">frameGrabberEthernetComp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">output_phytxclk</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">output_phymdc</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">udp_tx_result</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">fsm_proc.ram_seq_last_addr&lt;12&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">fsm_proc.ram_seq_last_addr&lt;11&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">fsm_proc.ram_seq_last_addr&lt;10&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">fsm_proc.ram_seq_last_addr&lt;9&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">fsm_proc.ram_seq_last_addr&lt;8&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">fsm_proc.ram_seq_last_addr&lt;7&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">fsm_proc.ram_seq_last_addr&lt;6&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">fsm_proc.ram_seq_last_addr&lt;5&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">fsm_proc.ram_seq_last_addr&lt;4&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">fsm_proc.ram_seq_last_addr&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">fsm_proc.ram_seq_last_addr&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">fsm_proc.ram_seq_last_addr&lt;1&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">fsm_proc.ram_seq_last_addr&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">RAM_PARALLEL&lt;0&gt;&lt;7&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">fsm_proc.ram_seq_last_addr&lt;13&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">RAM_PARALLEL&lt;0&gt;_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">frameGrabberEthernetComp</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_RAM_SEQ</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">RAM_PARALLEL&lt;0&gt;_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">frameGrabberEthernet</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_cntr_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_cntr_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_cntr_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_cntr_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_cntr_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_cntr_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_cntr_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_cntr_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_cntr_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_cntr_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_cntr_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_cntr_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_cntr_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_cntr_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_cntr_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_cntr_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_cntr_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_cntr_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_cntr_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_cntr_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_cntr_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_cntr_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_cntr_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_cntr_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_cntr_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_cntr_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_cntr_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_cntr_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_cntr_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_cntr_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_cntr_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_cntr_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_cntr_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_cntr_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_cntr_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_cntr_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_cntr_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_cntr_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_cntr_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_cntr_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_cntr_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_cntr_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_cntr_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_cntr_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_cntr_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_cntr_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_cntr_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_cntr_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_cntr_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_cntr_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_cntr_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_cntr_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_cntr_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_cntr_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_cntr_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_cntr_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_cntr_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_cntr_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_cntr_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_cntr_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_cntr_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_cntr_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_cntr_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_cntr_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_cntr_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_cntr_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_cntr_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_cntr_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_cntr_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_cntr_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_cntr_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_cntr_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_cntr_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_cntr_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_cntr_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_cntr_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_cntr_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_cntr_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_cntr_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_cntr_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn0_reg</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn4_reg</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn2_reg</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn1_reg</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">btnDebounceComp/btn3_reg</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">atlysWrapperDebugUDPStack</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

@@ -1,0 +1,29 @@
+Command line:
+   frameGrabberEthernetTB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57058
+
+Thu May 28 19:30:00 2015
+
+
+ Elaboration Time: 0.046801 sec
+
+ Current Memory Usage: 681.374 Meg
+
+ Total Signals          : 39
+ Total Nets             : 16691
+ Total Signal Drivers   : 28
+ Total Blocks           : 8
+ Total Primitive Blocks : 7
+ Total Processes        : 7
+ Total Traceable Variables  : 40
+ Total Scalar Nets and Variables : 17375
+Total Line Count : 131
+
+ Total Simulation Time: 0.156001 sec
+
+ Current Memory Usage: 995.946 Meg
+
+Thu May 28 19:31:06 2015
+

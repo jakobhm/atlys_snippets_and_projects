@@ -14,7 +14,7 @@
 --
 -- Revision: 
 -- Revision 0.01 - File Created
--- Revision 1.00 - functional test succesful
+-- Revision 1.00 - functional test successful with btnDebounce Rev1.00
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-05-28T12:10:49</DateModified>
+  <DateModified>2015-05-28T19:11:56</DateModified>
   <ModuleName>atlysWrapperDebugUDPStack</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Jakob Wittmann/Dropbox/ISE_Projects/debug_udp_stack/iseconfig/atlysWrapperDebugUDPStack.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Jakob Wittmann/Dropbox/ISE_Projects/debug_udp_stack</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2015-05-28T18:13:25</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/iseconfig/atlysWrapperDebugUDPStack.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack\</ImplementationReportsDirectory>
   <DateInitialized>2015-05-28T12:10:25</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

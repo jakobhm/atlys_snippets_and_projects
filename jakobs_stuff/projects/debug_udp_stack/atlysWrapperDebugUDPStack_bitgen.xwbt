@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\Jakob Wittmann\Dropbox\ISE_Projects\debug_udp_stack\atlysWrapperDebugUDPStack.ncd
-OUTFILE=C:\Users\Jakob Wittmann\Dropbox\ISE_Projects\debug_udp_stack\atlysWrapperDebugUDPStack.bit
+INFILE=C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.ncd
+OUTFILE=C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.bit
 FAMILY=Spartan6
 PART=xc6slx45-3csg324
-WORKINGDIR=C:\Users\Jakob Wittmann\Dropbox\ISE_Projects\debug_udp_stack
+WORKINGDIR=C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack
 LICENSE=WebPack
 USER_INFO=211010282_0_0_834

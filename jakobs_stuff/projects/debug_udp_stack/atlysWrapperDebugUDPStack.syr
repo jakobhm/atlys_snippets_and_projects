@@ -1,0 +1,795 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: atlysWrapperDebugUDPStack.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "atlysWrapperDebugUDPStack.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "atlysWrapperDebugUDPStack"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : atlysWrapperDebugUDPStack
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\our_stuff\ip_cores\udp_ip_stack\trunk\rtl\vhdl\axi.vhd" into library work
+Parsing package <axi>.
+Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\our_stuff\ip_cores\udp_ip_stack\trunk\rtl\vhdl\arp_types.vhd" into library work
+Parsing package <arp_types>.
+Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\our_stuff\ip_cores\udp_ip_stack\trunk\rtl\vhdl\ipv4_types.vhd" into library work
+Parsing package <ipv4_types>.
+Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\our_stuff\snippets\swDebounce\sw_debounce.vhd" into library work
+Parsing entity <swDebounce>.
+Parsing architecture <Behavioral> of entity <swdebounce>.
+Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\our_stuff\snippets\btnDebounce\btn_debounce.vhd" into library work
+Parsing entity <btnDebounce>.
+Parsing architecture <Behavioral> of entity <btndebounce>.
+Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" into library work
+Parsing entity <frameGrabberEthernet>.
+Parsing architecture <Behavioral> of entity <framegrabberethernet>.
+Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" into library work
+Parsing entity <atlysWrapperDebugUDPStack>.
+Parsing architecture <Behavioral> of entity <atlyswrapperdebugudpstack>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <atlysWrapperDebugUDPStack> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <btnDebounce> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <swDebounce> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <frameGrabberEthernet> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 222: ram_parallel should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 244: ram_parallel should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 257: ram_parallel should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 265: ram_seq should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 278: ram_seq should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 282. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 142: Assignment to ram_seq_areset ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 343: Assignment to ram_seq_dout ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 371: ram_parallel_din should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 368: Assignment to ram_parallel_dout ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 225: Assignment to input_phyrxer ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 227: Assignment to input_phymdi ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 228: Assignment to input_phyint ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 138: Net <output_phytxclk> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 143: Net <output_phymdc> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <atlysWrapperDebugUDPStack>.
+    Related source file is "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd".
+WARNING:Xst:647 - Input <phyrxer> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <phyint> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 165: Output port <BTN_O> of the instance <btnDebounceComp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 177: Output port <udp_txi_hdr_dst_ip_addr> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 177: Output port <udp_txi_hdr_dst_port> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 177: Output port <udp_txi_hdr_src_port> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 177: Output port <udp_txi_hdr_data_length> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 177: Output port <udp_txi_hdr_checksum> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 177: Output port <udp_tx_start> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 177: Output port <udp_txi_data_data_out_last> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <output_phytxclk> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <output_phymdc> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <atlysWrapperDebugUDPStack> synthesized.
+
+Synthesizing Unit <btnDebounce>.
+    Related source file is "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\our_stuff\snippets\btnDebounce\btn_debounce.vhd".
+    Found 16-bit register for signal <btn0_cntr>.
+    Found 1-bit register for signal <btn1_reg>.
+    Found 16-bit register for signal <btn1_cntr>.
+    Found 1-bit register for signal <btn2_reg>.
+    Found 16-bit register for signal <btn2_cntr>.
+    Found 1-bit register for signal <btn3_reg>.
+    Found 16-bit register for signal <btn3_cntr>.
+    Found 1-bit register for signal <btn4_reg>.
+    Found 16-bit register for signal <btn4_cntr>.
+    Found 1-bit register for signal <reset_reg>.
+    Found 16-bit register for signal <reset_cntr>.
+    Found 1-bit register for signal <btn0_reg>.
+    Found 16-bit adder for signal <btn0_cntr[15]_GND_9_o_add_2_OUT> created at line 70.
+    Found 16-bit adder for signal <btn1_cntr[15]_GND_9_o_add_8_OUT> created at line 94.
+    Found 16-bit adder for signal <btn2_cntr[15]_GND_9_o_add_14_OUT> created at line 118.
+    Found 16-bit adder for signal <btn3_cntr[15]_GND_9_o_add_20_OUT> created at line 142.
+    Found 16-bit adder for signal <btn4_cntr[15]_GND_9_o_add_26_OUT> created at line 166.
+    Found 16-bit adder for signal <reset_cntr[15]_GND_9_o_add_32_OUT> created at line 190.
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred 102 D-type flip-flop(s).
+Unit <btnDebounce> synthesized.
+
+Synthesizing Unit <swDebounce>.
+    Related source file is "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\our_stuff\snippets\swDebounce\sw_debounce.vhd".
+    Found 16-bit register for signal <sw0_cntr>.
+    Found 1-bit register for signal <sw1_reg>.
+    Found 16-bit register for signal <sw1_cntr>.
+    Found 1-bit register for signal <sw2_reg>.
+    Found 16-bit register for signal <sw2_cntr>.
+    Found 1-bit register for signal <sw3_reg>.
+    Found 16-bit register for signal <sw3_cntr>.
+    Found 1-bit register for signal <sw4_reg>.
+    Found 16-bit register for signal <sw4_cntr>.
+    Found 1-bit register for signal <sw5_reg>.
+    Found 16-bit register for signal <sw5_cntr>.
+    Found 1-bit register for signal <sw6_reg>.
+    Found 16-bit register for signal <sw6_cntr>.
+    Found 1-bit register for signal <sw7_reg>.
+    Found 16-bit register for signal <sw7_cntr>.
+    Found 1-bit register for signal <sw0_reg>.
+    Found 16-bit adder for signal <sw0_cntr[15]_GND_10_o_add_2_OUT> created at line 72.
+    Found 16-bit adder for signal <sw1_cntr[15]_GND_10_o_add_8_OUT> created at line 97.
+    Found 16-bit adder for signal <sw2_cntr[15]_GND_10_o_add_14_OUT> created at line 122.
+    Found 16-bit adder for signal <sw3_cntr[15]_GND_10_o_add_20_OUT> created at line 147.
+    Found 16-bit adder for signal <sw4_cntr[15]_GND_10_o_add_26_OUT> created at line 172.
+    Found 16-bit adder for signal <sw5_cntr[15]_GND_10_o_add_32_OUT> created at line 197.
+    Found 16-bit adder for signal <sw6_cntr[15]_GND_10_o_add_38_OUT> created at line 222.
+    Found 16-bit adder for signal <sw7_cntr[15]_GND_10_o_add_44_OUT> created at line 247.
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred 136 D-type flip-flop(s).
+Unit <swDebounce> synthesized.
+
+Synthesizing Unit <frameGrabberEthernet>.
+    Related source file is "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd".
+        useParallelRead = true
+        seq_read_byte_cnt = 2048
+        parallel_read_byte_cnt = 11
+        ram_addr_width = 14
+        udp_dst_ip_addr = "00001010000110111100000001011010"
+        udp_dst_port = "0000000100000010"
+        udp_src_port = "0000001100000100"
+        udp_checksum = "0000000000000000"
+WARNING:Xst:647 - Input <udp_tx_result> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit register for signal <cur_state>.
+    Found 14-bit register for signal <cnt_out>.
+    Found finite state machine <FSM_0> for signal <cur_state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 9                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | areset (positive)                              |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | state_reset                                    |
+    | Power Up State     | state_reset                                    |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 14-bit adder for signal <cnt_out[13]_GND_12_o_add_33_OUT> created at line 1241.
+    Found 16-bit adder for signal <GND_12_o_GND_12_o_add_34_OUT> created at line 276.
+    Found 14-bit subtractor for signal <GND_12_o_GND_12_o_sub_31_OUT<13:0>> created at line 1308.
+    Found 11-bit subtractor for signal <GND_12_o_GND_12_o_sub_36_OUT<10:0>> created at line 1308.
+    Found 2048x8-bit dual-port RAM <Mram_RAM_SEQ> for signal <RAM_SEQ>.
+WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RAM_PARALLEL<0><7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 14-bit comparator equal for signal <GND_12_o_cnt_out[13]_equal_32_o> created at line 269
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  14 D-type flip-flop(s).
+	inferred  15 Latch(s).
+	inferred   1 Comparator(s).
+	inferred  41 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <frameGrabberEthernet> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 2048x8-bit dual-port RAM                              : 1
+# Adders/Subtractors                                   : 18
+ 11-bit subtractor                                     : 1
+ 14-bit adder                                          : 1
+ 14-bit subtractor                                     : 1
+ 16-bit adder                                          : 15
+# Registers                                            : 29
+ 1-bit register                                        : 14
+ 14-bit register                                       : 1
+ 16-bit register                                       : 14
+# Latches                                              : 15
+ 1-bit latch                                           : 15
+# Comparators                                          : 1
+ 14-bit comparator equal                               : 1
+# Multiplexers                                         : 41
+ 1-bit 2-to-1 multiplexer                              : 25
+ 11-bit 2-to-1 multiplexer                             : 1
+ 14-bit 2-to-1 multiplexer                             : 5
+ 16-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 9
+# FSMs                                                 : 1
+# Xors                                                 : 14
+ 1-bit xor2                                            : 14
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <RAM_PARALLEL<0>_7> (without init value) has a constant value of 0 in block <frameGrabberEthernetComp>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <btnDebounce>.
+The following registers are absorbed into counter <btn0_cntr>: 1 register on signal <btn0_cntr>.
+The following registers are absorbed into counter <btn1_cntr>: 1 register on signal <btn1_cntr>.
+The following registers are absorbed into counter <btn3_cntr>: 1 register on signal <btn3_cntr>.
+The following registers are absorbed into counter <btn2_cntr>: 1 register on signal <btn2_cntr>.
+The following registers are absorbed into counter <btn4_cntr>: 1 register on signal <btn4_cntr>.
+The following registers are absorbed into counter <reset_cntr>: 1 register on signal <reset_cntr>.
+Unit <btnDebounce> synthesized (advanced).
+
+Synthesizing (advanced) Unit <frameGrabberEthernet>.
+The following registers are absorbed into counter <cnt_out>: 1 register on signal <cnt_out>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_SEQ> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <dv_0_0>        | high     |
+    |     addrA          | connected to signal <ram_seq_addr>  |          |
+    |     diA            | connected to signal <ram_seq_din>   |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 2048-word x 8-bit                   |          |
+    |     addrB          | connected to signal <_n0404>        |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <frameGrabberEthernet> synthesized (advanced).
+
+Synthesizing (advanced) Unit <swDebounce>.
+The following registers are absorbed into counter <sw0_cntr>: 1 register on signal <sw0_cntr>.
+The following registers are absorbed into counter <sw1_cntr>: 1 register on signal <sw1_cntr>.
+The following registers are absorbed into counter <sw2_cntr>: 1 register on signal <sw2_cntr>.
+The following registers are absorbed into counter <sw3_cntr>: 1 register on signal <sw3_cntr>.
+The following registers are absorbed into counter <sw4_cntr>: 1 register on signal <sw4_cntr>.
+The following registers are absorbed into counter <sw5_cntr>: 1 register on signal <sw5_cntr>.
+The following registers are absorbed into counter <sw6_cntr>: 1 register on signal <sw6_cntr>.
+The following registers are absorbed into counter <sw7_cntr>: 1 register on signal <sw7_cntr>.
+Unit <swDebounce> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 2048x8-bit dual-port distributed RAM                  : 1
+# Adders/Subtractors                                   : 4
+ 11-bit subtractor                                     : 1
+ 14-bit adder                                          : 1
+ 14-bit subtractor                                     : 1
+ 16-bit adder                                          : 1
+# Counters                                             : 15
+ 14-bit up counter                                     : 1
+ 16-bit up counter                                     : 14
+# Registers                                            : 14
+ Flip-Flops                                            : 14
+# Comparators                                          : 1
+ 14-bit comparator equal                               : 1
+# Multiplexers                                         : 39
+ 1-bit 2-to-1 multiplexer                              : 23
+ 11-bit 2-to-1 multiplexer                             : 1
+ 14-bit 2-to-1 multiplexer                             : 5
+ 16-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 9
+# FSMs                                                 : 1
+# Xors                                                 : 14
+ 1-bit xor2                                            : 14
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <RAM_PARALLEL<0>_7> (without init value) has a constant value of 0 in block <frameGrabberEthernet>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <frameGrabberEthernetComp/FSM_0> on signal <cur_state[1:3]> with user encoding.
+-------------------------------------
+ State                   | Encoding
+-------------------------------------
+ state_reset             | 000
+ idle                    | 001
+ data_read               | 010
+ wait_for_tx_ready       | 011
+ send_parallel_data      | 100
+ send_parallel_data_last | 101
+ send_seq_data           | 110
+ send_seq_data_last      | 111
+-------------------------------------
+
+Optimizing unit <atlysWrapperDebugUDPStack> ...
+
+Optimizing unit <swDebounce> ...
+
+Optimizing unit <frameGrabberEthernet> ...
+
+Optimizing unit <btnDebounce> ...
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_14> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_13> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_15> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_11> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_10> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_12> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_8> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_7> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_9> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_6> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_5> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_4> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_3> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_1> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_0> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_2> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_15> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_14> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_13> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_11> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_10> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_12> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_9> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_8> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_7> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_6> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_4> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_3> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_5> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_1> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_0> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_2> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_cntr_15> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_cntr_14> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_cntr_13> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_cntr_11> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_cntr_10> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_cntr_12> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_cntr_8> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_cntr_7> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_cntr_9> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_cntr_5> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_cntr_4> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_cntr_6> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_cntr_3> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_cntr_2> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_cntr_1> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_cntr_0> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_cntr_15> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_cntr_14> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_cntr_13> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_cntr_12> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_cntr_11> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_cntr_10> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_cntr_8> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_cntr_7> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_cntr_9> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_cntr_6> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_cntr_5> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_cntr_4> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_cntr_3> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_cntr_1> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_cntr_0> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_cntr_2> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_15> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_14> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_12> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_11> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_13> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_10> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_9> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_8> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_7> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_5> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_4> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_6> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_3> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_2> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_1> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_0> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn0_reg> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn4_reg> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn2_reg> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn1_reg> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+WARNING:Xst:2677 - Node <btnDebounceComp/btn3_reg> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block atlysWrapperDebugUDPStack, actual ratio is 3.
+FlipFlop frameGrabberEthernetComp/cur_state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop frameGrabberEthernetComp/cur_state_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop frameGrabberEthernetComp/cur_state_FSM_FFd3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 173
+ Flip-Flops                                            : 173
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : atlysWrapperDebugUDPStack.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 807
+#      GND                         : 1
+#      INV                         : 23
+#      LUT1                        : 149
+#      LUT2                        : 33
+#      LUT3                        : 24
+#      LUT4                        : 7
+#      LUT5                        : 49
+#      LUT6                        : 174
+#      MUXCY                       : 167
+#      MUXF7                       : 8
+#      VCC                         : 1
+#      XORCY                       : 171
+# FlipFlops/Latches                : 187
+#      FD                          : 17
+#      FDC                         : 6
+#      FDCE                        : 14
+#      FDE                         : 1
+#      FDR                         : 135
+#      LD                          : 14
+# RAMS                             : 128
+#      RAM64M                      : 64
+#      RAM64X1D                    : 64
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 41
+#      IBUF                        : 19
+#      OBUF                        : 22
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             187  out of  54576     0%  
+ Number of Slice LUTs:                  843  out of  27288     3%  
+    Number used as Logic:               459  out of  27288     1%  
+    Number used as Memory:              384  out of   6408     5%  
+       Number used as RAM:              384
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    846
+   Number with an unused Flip Flop:     659  out of    846    77%  
+   Number with an unused LUT:             3  out of    846     0%  
+   Number of fully used LUT-FF pairs:   184  out of    846    21%  
+   Number of unique control sets:        14
+
+IO Utilization: 
+ Number of IOs:                          49
+ Number of bonded IOBs:                  41  out of    218    18%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------------------------------------+----------------------------------------------------------------+-------+
+Clock Signal                                                                                     | Clock buffer(FF name)                                          | Load  |
+-------------------------------------------------------------------------------------------------+----------------------------------------------------------------+-------+
+phyrxclk                                                                                         | IBUF+BUFG                                                      | 301   |
+frameGrabberEthernetComp/ram_parallel_aload(frameGrabberEthernetComp/Mmux_ram_parallel_aload11:O)| NONE(*)(frameGrabberEthernetComp/fsm_proc.ram_seq_last_addr_13)| 14    |
+-------------------------------------------------------------------------------------------------+----------------------------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.352ns (Maximum Frequency: 229.787MHz)
+   Minimum input arrival time before clock: 5.587ns
+   Maximum output required time after clock: 11.667ns
+   Maximum combinational path delay: 4.372ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'phyrxclk'
+  Clock period: 4.352ns (frequency: 229.787MHz)
+  Total number of paths / destination ports: 10108 / 1879
+-------------------------------------------------------------------------
+Delay:               4.352ns (Levels of Logic = 1)
+  Source:            frameGrabberEthernetComp/cur_state_FSM_FFd3 (FF)
+  Destination:       frameGrabberEthernetComp/Mram_RAM_SEQ961 (RAM)
+  Source Clock:      phyrxclk rising
+  Destination Clock: phyrxclk rising
+
+  Data Path: frameGrabberEthernetComp/cur_state_FSM_FFd3 to frameGrabberEthernetComp/Mram_RAM_SEQ961
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             63   0.447   1.634  frameGrabberEthernetComp/cur_state_FSM_FFd3 (frameGrabberEthernetComp/cur_state_FSM_FFd3)
+     LUT3:I2->O          256   0.205   2.066  frameGrabberEthernetComp/Mmux__n040411 (frameGrabberEthernetComp/_n0404<0>)
+     RAM64X1D:DPRA0           -0.215          frameGrabberEthernetComp/Mram_RAM_SEQ661
+    ----------------------------------------
+    Total                      4.352ns (0.652ns logic, 3.700ns route)
+                                       (15.0% logic, 85.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'phyrxclk'
+  Total number of paths / destination ports: 1696 / 1314
+-------------------------------------------------------------------------
+Offset:              5.587ns (Levels of Logic = 3)
+  Source:            phyrxdv (PAD)
+  Destination:       frameGrabberEthernetComp/Mram_RAM_SEQ961 (RAM)
+  Destination Clock: phyrxclk rising
+
+  Data Path: phyrxdv to frameGrabberEthernetComp/Mram_RAM_SEQ961
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            44   1.222   1.691  phyrxdv_IBUF (phyrxdv_IBUF)
+     LUT4:I1->O           31   0.205   1.278  frameGrabberEthernetComp/dv_01 (frameGrabberEthernetComp/dv_0_0)
+     LUT6:I5->O            4   0.205   0.683  frameGrabberEthernetComp/write_ctrl31 (frameGrabberEthernetComp/write_ctrl31)
+     RAM64M:WE                 0.304          frameGrabberEthernetComp/Mram_RAM_SEQ32
+    ----------------------------------------
+    Total                      5.587ns (1.936ns logic, 3.651ns route)
+                                       (34.7% logic, 65.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'phyrxclk'
+  Total number of paths / destination ports: 1387 / 17
+-------------------------------------------------------------------------
+Offset:              10.691ns (Levels of Logic = 7)
+  Source:            frameGrabberEthernetComp/cur_state_FSM_FFd3 (FF)
+  Destination:       phyTXD<7> (PAD)
+  Source Clock:      phyrxclk rising
+
+  Data Path: frameGrabberEthernetComp/cur_state_FSM_FFd3 to phyTXD<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             63   0.447   1.634  frameGrabberEthernetComp/cur_state_FSM_FFd3 (frameGrabberEthernetComp/cur_state_FSM_FFd3)
+     LUT4:I3->O          256   0.205   2.066  frameGrabberEthernetComp/Mmux__n040431 (frameGrabberEthernetComp/_n0404<1>)
+     RAM64X1D:DPRA1->DPO    1   0.205   0.827  frameGrabberEthernetComp/Mram_RAM_SEQ911 (frameGrabberEthernetComp/N524)
+     LUT6:I2->O            1   0.203   0.827  frameGrabberEthernetComp/inst_LPM_MUX6_81 (frameGrabberEthernetComp/inst_LPM_MUX6_81)
+     LUT6:I2->O            1   0.203   0.000  frameGrabberEthernetComp/inst_LPM_MUX6_3 (frameGrabberEthernetComp/inst_LPM_MUX6_3)
+     MUXF7:I1->O           1   0.140   0.580  frameGrabberEthernetComp/inst_LPM_MUX6_2_f7 (frameGrabberEthernetComp/cnt_out[10]_read_port_29_OUT<6>)
+     LUT3:I2->O            1   0.205   0.579  frameGrabberEthernetComp/Mmux_udp_txi_data_data_out71 (phyTXD_6_OBUF)
+     OBUF:I->O                 2.571          phyTXD_6_OBUF (phyTXD<6>)
+    ----------------------------------------
+    Total                     10.691ns (4.179ns logic, 6.512ns route)
+                                       (39.1% logic, 60.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'frameGrabberEthernetComp/ram_parallel_aload'
+  Total number of paths / destination ports: 2712 / 8
+-------------------------------------------------------------------------
+Offset:              11.667ns (Levels of Logic = 8)
+  Source:            frameGrabberEthernetComp/fsm_proc.ram_seq_last_addr_0 (LATCH)
+  Destination:       phyTXD<7> (PAD)
+  Source Clock:      frameGrabberEthernetComp/ram_parallel_aload falling
+
+  Data Path: frameGrabberEthernetComp/fsm_proc.ram_seq_last_addr_0 to phyTXD<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              13   0.498   1.161  frameGrabberEthernetComp/fsm_proc.ram_seq_last_addr_0 (frameGrabberEthernetComp/fsm_proc.ram_seq_last_addr_0)
+     LUT3:I0->O            9   0.205   1.194  frameGrabberEthernetComp/_n0404<3>11 (frameGrabberEthernetComp/_n0404<3>_bdd0)
+     LUT6:I0->O          256   0.203   2.066  frameGrabberEthernetComp/_n0404<5>1 (frameGrabberEthernetComp/_n0404<5>)
+     RAM64X1D:DPRA5->DPO    1   0.205   0.827  frameGrabberEthernetComp/Mram_RAM_SEQ911 (frameGrabberEthernetComp/N524)
+     LUT6:I2->O            1   0.203   0.827  frameGrabberEthernetComp/inst_LPM_MUX6_81 (frameGrabberEthernetComp/inst_LPM_MUX6_81)
+     LUT6:I2->O            1   0.203   0.000  frameGrabberEthernetComp/inst_LPM_MUX6_3 (frameGrabberEthernetComp/inst_LPM_MUX6_3)
+     MUXF7:I1->O           1   0.140   0.580  frameGrabberEthernetComp/inst_LPM_MUX6_2_f7 (frameGrabberEthernetComp/cnt_out[10]_read_port_29_OUT<6>)
+     LUT3:I2->O            1   0.205   0.579  frameGrabberEthernetComp/Mmux_udp_txi_data_data_out71 (phyTXD_6_OBUF)
+     OBUF:I->O                 2.571          phyTXD_6_OBUF (phyTXD<6>)
+    ----------------------------------------
+    Total                     11.667ns (4.433ns logic, 7.234ns route)
+                                       (38.0% logic, 62.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               4.372ns (Levels of Logic = 2)
+  Source:            phyrxclk (PAD)
+  Destination:       phygtxclk (PAD)
+
+  Data Path: phyrxclk to phygtxclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  phyrxclk_IBUF (phygtxclk_OBUF)
+     OBUF:I->O                 2.571          phygtxclk_OBUF (phygtxclk)
+    ----------------------------------------
+    Total                      4.372ns (3.793ns logic, 0.579ns route)
+                                       (86.8% logic, 13.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock frameGrabberEthernetComp/ram_parallel_aload
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+phyrxclk       |         |         |    2.451|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock phyrxclk
+-------------------------------------------+---------+---------+---------+---------+
+                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------------+---------+---------+---------+---------+
+frameGrabberEthernetComp/ram_parallel_aload|         |    5.606|         |         |
+phyrxclk                                   |    4.352|         |         |         |
+-------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.57 secs
+ 
+--> 
+
+Total memory usage is 265616 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  121 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

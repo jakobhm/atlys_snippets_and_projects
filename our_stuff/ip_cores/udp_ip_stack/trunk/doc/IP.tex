@@ -1,0 +1,106 @@
+\section{IP-IPv4}
+\paragraph{Allgemeines}
+Das IP befindet sich auf der 3. Schicht (Vermittlung/Network) des OSI-Schichtenmodels und auf Schicht 2 des TCP/IP-Schichtenmodels.
+Es gibt das IPv4 und das IPv6. Mit dem IPv6 wurde der Umfang der IP-Adressen um 96bit erweitert also auf 128bit im Gegensatz zu dem IPv4-Protokoll mit 32bit. 
+Bei unserem IP/UDP-Opensource Stack wird das IPv4-Protokoll verwendet.
+Deshalb wird diese im speziellen betrachtet und mit IP bezeichnet. 
+Üblicherweise werden die 4 Bytes mit Punkten getrennt in dezimaler Schreibweise dargestellt. 
+Wie z.B. 207.142.131.235. FÜr die Vergabe der Nummern und Namen im Internet ist IANA zuständig. 
+Die IP-Adressen werden in Netzklassen eingeteilt. 
+
+
+\subsection{Paket}
+Die Paketlänge eines IP-Pakets kann maximal 65535 Byte lang sein (2¹⁶ - 1). 
+Hierbei sind 20 Byte für den IP-Header reserviert.
+Deshalb stehen maximal 65515 Byte für das darüberliegende Protokoll zur Verfügung.
+Normalerweise wird das Paket auf die maximale Länge beschrängt, die der darunterliegende Frame bietet. 
+Bei Ethernet wäre dies 1500 Bytes Daten.
+Davon gehen 20 für den IP-Header flöten.
+Also ist eine wichtige Rechengröße für darüberliegende Protokolle die 1480 Byte.
+Wenn eine IP-Frame über Ethernet versendet wird muss dieses mindestens 64 Bytes groß sein. 
+Ist der Frame kleiner wird er durch Nullbytes auf diese Länge erweitert.
+Im length-Feld, des IP-Pakets, kann die wahre Länge ermittelt werden.
+Im Ethernet-Netzwerk haben alle Karten eine 48-Bit-Adresse. 
+Eine Kommunikation über IP-Paketen von einer Karte zur nächsten kann nur über diese MAC-Adresse erfolgen.
+Also besitzt jedes IP-Sendebereites Ethernet-System eine IP-Adressen und eine MAC-Adressen.
+Über das ARP (Address Resolution Protocol) kann ein System sich bei bekannter MAC- bzw. die IP-Adresse die fehlende Unbekannte eines weiteren IP-Systems erfragen.
+Die IP/MAC-Adresszuordung wird in jedem Rechner im ARP-Cache gespeichert und verwaltet.
+Über ARP-Request können unbekannte Adressen abgefragt werden und werden durch ARP-Replys beantwortet.
+Viele Optionen des IPv4-Headers bleiben ungenutzt. 
+Der IP-Header hat eine Prüfsumme, die aber nur über den IP-Header gebildet wird. Über höhere Protokolle wie UDP kann dem Datenfeld eine Prüfsummen hinzugefügt werden. 
+Außerdem fügt das TCP bzw. UDP noch Portadressen hinzu die für die als Prozessadressen bzw. als Endpunkte fungieren.
+TCP baut eine Verbindung zwischen diesen Endpunkten/Portadressen auf und kommuniziert somit mit anderen im Netz entfernten Prozessen.
+Bei der Übertragung können Pakete im Netzwerk fragmentiert werden.
+Hierbei wird durch Flags angezeigt, dass dem gerade Empfangenem Paket noch weitere Fragmente folgen.
+Im Fragment Offset Feld wird der Ort des Fragments im uhrsprünglichem Header beschrieben.
+Folgt kein Fragment mehr dem IP-Paket mit dem höchsten Fragment Offset ist das MF-Flag im Header gesetzt.
+
+\section{ARP - Adress Resolution Protocol }
+ARP kann in unterschiedlichen Netzwerken verwendet werden.
+Im Ethernet besteht zwischen IP- und MAC-Adressen kein fester Zusammenhang.
+Außerdem kann im Ethernet nur über die MAC-Adresse einem Rechner ein Ethernet-Frame zugestellt werden indem sich ein IP-Packet befindet. 
+Bei der Zustellung spielt die IP-Adresse keine Rolle.
+Hat man nun aber nur die IP-Adresse braucht man eine Möglichkeit auf die dazugehörige MAC-Adresse schließen zu können.  
+Um dieses Problem aus dem Weg zu schaffen wurde ARP etwickelt.
+ARP wird fast ausschließlich in Ethernet-Netzen verwendet und dient der Zuordnung von MAC- zu IP- bzw IP- zu MAC-Adressen.
+In IPv6 wird das von NDP erledigt.
+Die Zuordung wird in ARP-Tabellen der beteiligten Rechner hinterlegt.
+ 
+\subsection{Funktionsweise}
+Ein Rechner ordnet einer bekannten IP-Adresse eine MAC-Adresse zu.
+Dazu wird ein ARP-Anforderung in dem die eigene MAC- und IP-Adresse und die IP-Adresse des gesuchten Computers verpackt ist vesendet. 
+Die MAC-Adresse des gesuchten Rechners wird im ARP-Header auf die Broadcast-Adresse ff-ff-ff-ff-ff-ff gesetzt. 
+Diese ARP-Paket mit der Broadcast-Adresse wird von jedem PC aufgenommen.
+Der Empfänger der im Header seine IP-Adresse wiederfindet ersetzt die Broadcast-Adresse durch seine MAC-Adresse und schickt das Paket zurück (ARP-Reply).
+Empfängt der anfragende Rechner diese Packet, schreibt er die MAC- und IP-Adresse in den ARP-Cache.
+Der angefragte Rechner speichert meist auch die MAC- und IP-Adresse des fragenden Rechners.
+Der ARP-Cache speichert Protokolltyp, Protokolladresse des Senders, Hardware-Adresse des Senders und Eintragszeitpunkt.
+Der Eintragszeitpunkt gibt an wann ein Eintrag als ungültig erklärt wird und neu angefordert werden muss.
+Unter Unix und Windows kann mit "arp -a" der Cache angezeigt werden.
+Das ARP arbeitet nur auf lokaler Netzwerkebene.
+
+\paragraph{ARP - Paketformat}
+Das ARP-Paket wird im Ethernetframe versendet.
+Das Typfeld des Ethernetframes wird auf 0x0806 gesetzt. 
+0x0806 ist für ARP-Pakete reserviert und zeichnet es als solches aus.
+Da ARP-Pakete kurtz sind werden sie mit zusätzlichen Nullen auf die minmale Framgröße von 64 Byte aufgefüllt.
+Durch die Adresstypen und Adresslängen könnte Theoretisch das ARP-Protokoll auch für z.B. das IPv6 eingesetzt werden.
+Dieses verwendet aber das NDP.
+
+\subsection{Spezielle ARP-Nachrichten}
+
+\paragraph{Proxy ARP}
+Es sind zwei Rechner durch einen Router getrennt.
+Der anfragende Rechner sendet eine Anfrage an Rechner 2.
+Hier antwortet der Router auf die IP-Adresse, aber mit seiner Router-MAC-Adresse die in Richtung anfragenden Rechner schaut.
+Somit sendet der anfragende Rechner die Pakete zuerst an den Router der die Pakete dann weiterleitet.
+
+\paragraph{Gratuitous ARP}
+Bei dieser Art sendet der Rechner ein ARP-Paket in dem seine IP-Adresse sowohl als Sende- als auch als die gesuchte Zieladresse eingetragen ist.
+
+\pargraph{RARP - Reverse-ARP}
+Hierbei wird nicht die MAC- sonder die IP-Adresse gesucht.
+
+\section{UDP}
+UDP siedelt sich über dem IP an auf der 3. Ebene (Transport) des TCP/IP-Protokollstapels.
+Im ISO/OSI-Model auf der 4. Schicht (Transport).
+Mit UDP bzw. TCP kann über die Portadresse das Paket von Anwendung via Netz zu einer anderen Anwendung verschickt werden.
+Dies nennt man Anwendungsmultiplexen bzw. -demultiplexen.
+Somit ist die "Adress-Reihenfolge" von unten nach oben wie folgt: MAC-Adresse, IP-Adresse, Portadresse.
+Außerdem fügt UDP quasi dem Datenfeld des IP-Pakets eine Prüfsumme hinzu.
+Die Prüfsumme des UDP wird über das komplette Paket gebildet.
+Die größe des übertragbaren Daten in einem UDP-Datenbereich ist theoretisch 2¹⁶-1.
+Diese Menge wird dann jedoch fragmentiert im IP-Paket übertragen, dass selbst nur maximal 65515 Bytes im Datenfeld übertragen kann.
+Somit kann auf einmal ein Daten-Paket von 65535-8(UDP-Header) übertragen werden.
+
+\section{unser UDP/IP-Stack}
+
+\paragraph{ was wird nicht unterstüzt }
+Es ist keine Fragmentierung der Pakete möglich.
+
+\begin{itemize}
+  \item keine Fragmentierung des IP-Pakets
+  \item 
+  \item The third etc \ldots
+\end{itemize}
+

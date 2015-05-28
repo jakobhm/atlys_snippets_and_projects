@@ -1,0 +1,456 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'atlysWrapperDebugUDPStack'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o atlysWrapperDebugUDPStack_map.ncd
+atlysWrapperDebugUDPStack.ngd atlysWrapperDebugUDPStack.pcf 
+Target Device  : xc6slx45
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Thu May 28 19:41:38 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   65
+Slice Logic Utilization:
+  Number of Slice Registers:                   187 out of  54,576    1%
+    Number used as Flip Flops:                 173
+    Number used as Latches:                     14
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        825 out of  27,288    3%
+    Number used as logic:                      431 out of  27,288    1%
+      Number using O6 output only:             251
+      Number using O5 output only:             139
+      Number using O5 and O6:                   41
+      Number used as ROM:                        0
+    Number used as Memory:                     384 out of   6,408    5%
+      Number used as Dual Port RAM:            384
+        Number using O6 output only:           384
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:             0
+    Number used exclusively as route-thrus:     10
+      Number with same-slice register load:      0
+      Number with same-slice carry load:        10
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   294 out of   6,822    4%
+  Number of MUXCYs used:                       184 out of  13,644    1%
+  Number of LUT Flip Flop pairs used:          832
+    Number with an unused Flip Flop:           645 out of     832   77%
+    Number with an unused LUT:                   7 out of     832    1%
+    Number of fully used LUT-FF pairs:         180 out of     832   21%
+    Number of unique control sets:              46
+    Number of slice register sites lost
+      to control set restrictions:             157 out of  54,576    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        49 out of     218   22%
+    Number of LOCed IOBs:                       49 out of      49  100%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of     116    0%
+  Number of RAMB8BWERs:                          0 out of     232    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       8    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     376    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     376    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     376    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     256    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      58    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       4    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                5.27
+
+Peak Memory Usage:  439 MB
+Total REAL time to MAP completion:  11 secs 
+Total CPU time to MAP completion:   11 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   frameGrabberEthernetComp/ram_parallel_aload is sourced by a combinatorial
+   pin. This is not good design practice. Use the CE pin to control the loading
+   of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ58_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ10_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ11_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ57_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ60_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ12_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ9_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ6_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ7_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ59_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ27_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ28_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ26_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ2_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ5_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ8_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ62_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ61_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ64_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ63_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ41_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ44_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ42_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ40_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ39_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ38_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ37_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ25_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ4_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ20_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ1_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ30_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ35_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ33_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ36_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ43_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ18_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ19_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ3_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ31_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ23_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ55_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ49_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ52_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ51_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ50_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ45_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ15_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ16_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ13_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ14_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ17_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ29_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ32_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ21_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ24_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ22_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ56_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ53_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ54_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ34_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ46_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ48_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <frameGrabberEthernetComp/Mram_RAM_SEQ47_RAMD_O> is incomplete. The signal
+   does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network BTN<5>_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 71 more times for the
+   following (max. 5 shown):
+   BTN<4>_IBUF,
+   BTN<3>_IBUF,
+   BTN<2>_IBUF,
+   BTN<1>_IBUF,
+   phyrxer_IBUF
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| BTN<0>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BTN<1>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BTN<2>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BTN<3>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BTN<4>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| BTN<5>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| LED<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED<4>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED<5>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED<6>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| LED<7>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| SW<0>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SW<1>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SW<2>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SW<3>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SW<4>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SW<5>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SW<6>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| SW<7>                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| phyRXD<0>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| phyRXD<1>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| phyRXD<2>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| phyRXD<3>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| phyRXD<4>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| phyRXD<5>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| phyRXD<6>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| phyRXD<7>                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| phyTXD<0>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| phyTXD<1>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| phyTXD<2>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| phyTXD<3>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| phyTXD<4>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| phyTXD<5>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| phyTXD<6>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| phyTXD<7>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| phygtxclk                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| phyint                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| phymdc                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| phymdi                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| phyrst                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| phyrxclk                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| phyrxdv                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| phyrxer                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| phytxclk                           | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| phytxen                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| phytxer                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

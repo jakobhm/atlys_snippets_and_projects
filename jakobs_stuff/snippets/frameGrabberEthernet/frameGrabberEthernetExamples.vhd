@@ -4,7 +4,7 @@
 -- 
 -- Create Date:    16:58:59 05/28/2015 
 -- Design Name: 
--- Module Name:    btnDebounceExamples - Behavioral 
+-- Module Name:    frameGrabberEthernetExamples - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -14,7 +14,8 @@
 --
 -- Revision: 
 -- Revision 0.01 - File Created
--- Revision 1.00 - functional test succesful
+-- Revision 1.00 - functional test successful with frameGrabberEthernet Rev1.00
+-- Revision 1.01 - updated changes in frameGrabberEthernet Rev1.01
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
@@ -22,17 +23,19 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.std_logic_unsigned.all;
+use work.axi.all;
+use work.ipv4_types.all;
 
+entity frameGrabberEthernetExamples is
+end frameGrabberEthernetExamples;
 
-entity btnDebounceExamples is
-end btnDebounceExamples;
-
-architecture Behavioral of btnDebounceExamples is
+architecture Behavioral of frameGrabberEthernetExamples is
 
    --###############################--
    --###        CONSTANTS         ##--
    --###############################--
    ------ frameGrabberEthernet ------
+   constant useParallelRead_const     : boolean := true;
    constant seqReadByteCnt_const      : integer := 2048;
    constant parallelReadByteCnt_const : integer := 11;
    constant ramAddrWidth_const        : integer := 14;
@@ -47,6 +50,8 @@ architecture Behavioral of btnDebounceExamples is
 
    component frameGrabberEthernet
    generic(
+      -- model config
+      useParallelRead         : boolean;
       -- ram config
       seq_read_byte_cnt       : integer;
       parallel_read_byte_cnt  : integer;
@@ -60,7 +65,7 @@ architecture Behavioral of btnDebounceExamples is
       areset                  : IN  std_logic;
       clk_en                  : IN  std_logic;
       clk                     : IN  std_logic;
-      d_parallel_in           : IN  std_logic_vector(const_parallel_read_byte_cnt*8-1 downto 0);
+      d_parallel_in           : IN  std_logic_vector(parallelReadByteCnt_const*8-1 downto 0);
       d_seq_in                : IN  std_logic_vector(7 downto 0);
       dv                      : IN  std_logic;
       udp_tx_start            : OUT  std_logic;
@@ -85,8 +90,10 @@ begin
    --###############################--
    --###   PORT- / GENERIC- MAP   ##--
    --###############################--
-   frame_grabber_ethernet_comp : frame_grabber_ethernet 
+   frameGrabberEthernetComp : frameGrabberEthernet
    generic map(
+      -- model config
+      useParallelRead        => useParallelRead_const,
 	  -- ram config
       seq_read_byte_cnt      => seqReadByteCnt_const,
       parallel_read_byte_cnt => parallelReadByteCnt_const,
@@ -108,5 +115,18 @@ begin
       udp_tx_result          => ,
       udp_tx_data_out_ready  => 
       );
+      
+   --################################--
+   --###   PARALLEL ASSIGNEMENTS   ##--
+   --################################--
+
+   <= frameGrabberEthernet_udpTxi.hdr.dst_ip_addr; 		   -- STD_LOGIC_VECTOR (31 downto 0);
+   <= frameGrabberEthernet_udpTxi.hdr.dst_port;             -- STD_LOGIC_VECTOR (15 downto 0);
+   <= frameGrabberEthernet_udpTxi.hdr.src_port;             -- STD_LOGIC_VECTOR (15 downto 0);
+   <= frameGrabberEthernet_udpTxi.hdr.data_length;          -- STD_LOGIC_VECTOR (15 downto 0);
+   <= frameGrabberEthernet_udpTxi.hdr.checksum;             -- STD_LOGIC_VECTOR (15 downto 0);
+   <= frameGrabberEthernet_udpTxi.data.data_out_valid;      -- std_logic;
+   <= frameGrabberEthernet_udpTxi.data.data_out_last;       -- std_logic;
+   <= frameGrabberEthernet_udpTxi.data.data_out;            -- std_logic_vector (7 downto 0);
 
 end Behavioral;

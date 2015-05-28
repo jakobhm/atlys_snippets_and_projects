@@ -1,0 +1,134 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml atlysWrapperDebugUDPStack.twx
+atlysWrapperDebugUDPStack.ncd -o atlysWrapperDebugUDPStack.twr
+atlysWrapperDebugUDPStack.pcf -ucf AtlysGeneralBasic.ucf
+
+Design file:              atlysWrapperDebugUDPStack.ncd
+Physical constraint file: atlysWrapperDebugUDPStack.pcf
+Device,package,speed:     xc6slx45,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock phyrxclk
+------------+------------+------------+------------+------------+-------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                   | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)  | Phase  |
+------------+------------+------------+------------+------------+-------------------+--------+
+BTN<0>      |    4.365(R)|      SLOW  |   -2.419(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+SW<0>       |    2.860(R)|      SLOW  |   -1.513(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+SW<1>       |    4.466(R)|      SLOW  |   -2.568(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+SW<2>       |    2.252(R)|      SLOW  |   -1.168(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+SW<3>       |    1.761(R)|      SLOW  |   -0.432(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+SW<4>       |    1.861(R)|      SLOW  |   -0.463(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+SW<5>       |    2.901(R)|      SLOW  |   -1.389(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+SW<6>       |    1.597(R)|      SLOW  |   -0.213(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+SW<7>       |    2.934(R)|      SLOW  |   -1.507(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyRXD<0>   |    2.714(R)|      SLOW  |    0.121(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+phyRXD<1>   |    2.862(R)|      SLOW  |   -0.005(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+phyRXD<2>   |    2.814(R)|      SLOW  |   -0.199(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+phyRXD<3>   |    4.828(R)|      SLOW  |   -1.554(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyRXD<4>   |    3.033(R)|      SLOW  |    0.189(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+phyRXD<5>   |    3.373(R)|      SLOW  |   -0.323(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+phyRXD<6>   |    3.521(R)|      SLOW  |    0.072(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+phyRXD<7>   |    4.063(R)|      SLOW  |   -1.527(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+------------+------------+------------+------------+------------+-------------------+--------+
+
+Clock phyrxclk to Pad
+------------+-----------------+------------+-----------------+------------+-------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                   | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)  | Phase  |
+------------+-----------------+------------+-----------------+------------+-------------------+--------+
+LED<0>      |        11.455(R)|      SLOW  |         6.345(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+LED<1>      |        11.793(R)|      SLOW  |         6.611(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+LED<2>      |        10.668(R)|      SLOW  |         5.796(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+LED<3>      |         7.966(R)|      SLOW  |         4.194(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+LED<4>      |         8.438(R)|      SLOW  |         4.516(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+LED<5>      |        12.658(R)|      SLOW  |         7.094(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+LED<6>      |         9.201(R)|      SLOW  |         5.120(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+LED<7>      |        12.235(R)|      SLOW  |         6.913(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyTXD<0>   |        17.192(R)|      SLOW  |         4.988(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyTXD<1>   |        16.607(R)|      SLOW  |         5.035(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyTXD<2>   |        18.265(R)|      SLOW  |         5.396(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyTXD<3>   |        18.452(R)|      SLOW  |         4.974(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyTXD<4>   |        19.312(R)|      SLOW  |         5.948(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyTXD<5>   |        18.138(R)|      SLOW  |         5.306(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyTXD<6>   |        17.596(R)|      SLOW  |         5.142(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyTXD<7>   |        17.799(R)|      SLOW  |         5.105(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phytxen     |         9.664(R)|      SLOW  |         5.170(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+------------+-----------------+------------+-----------------+------------+-------------------+--------+
+
+Clock phyrxdv to Pad
+------------+-----------------+------------+-----------------+------------+-------------------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                           | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                          | Phase  |
+------------+-----------------+------------+-----------------+------------+-------------------------------------------+--------+
+phyTXD<0>   |        21.432(F)|      SLOW  |         7.417(F)|      FAST  |frameGrabberEthernetComp/ram_parallel_aload|   0.000|
+phyTXD<1>   |        21.051(F)|      SLOW  |         7.499(F)|      FAST  |frameGrabberEthernetComp/ram_parallel_aload|   0.000|
+phyTXD<2>   |        22.505(F)|      SLOW  |         7.736(F)|      FAST  |frameGrabberEthernetComp/ram_parallel_aload|   0.000|
+phyTXD<3>   |        22.034(F)|      SLOW  |         7.639(F)|      FAST  |frameGrabberEthernetComp/ram_parallel_aload|   0.000|
+phyTXD<4>   |        22.835(F)|      SLOW  |         8.186(F)|      FAST  |frameGrabberEthernetComp/ram_parallel_aload|   0.000|
+phyTXD<5>   |        21.985(F)|      SLOW  |         7.682(F)|      FAST  |frameGrabberEthernetComp/ram_parallel_aload|   0.000|
+phyTXD<6>   |        20.752(F)|      SLOW  |         7.148(F)|      FAST  |frameGrabberEthernetComp/ram_parallel_aload|   0.000|
+phyTXD<7>   |        20.782(F)|      SLOW  |         7.093(F)|      FAST  |frameGrabberEthernetComp/ram_parallel_aload|   0.000|
+------------+-----------------+------------+-----------------+------------+-------------------------------------------+--------+
+
+Clock to Setup on destination clock phyrxclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+phyrxclk       |    6.235|         |         |         |
+phyrxdv        |    6.058|    7.615|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock phyrxdv
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+phyrxclk       |         |         |    2.272|         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+phyrxclk       |phygtxclk      |    5.248|
+---------------+---------------+---------+
+
+
+Analysis completed Thu May 28 19:42:11 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 281 MB
+
+
+

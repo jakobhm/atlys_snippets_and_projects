@@ -14,6 +14,8 @@
 --
 -- Revision: 
 -- Revision 0.01 - File Created
+-- Revision 1.00 - it works, but looks horrible
+-- Revision 1.01 - added model config: useParallelRead; testet, works well
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
@@ -34,6 +36,8 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity frameGrabberEthernet is
 generic(
+   -- model config
+	useParallelRead        : boolean := true;
    -- ram config
    seq_read_byte_cnt      : integer := 10;
 	parallel_read_byte_cnt : integer := 10;
@@ -111,6 +115,7 @@ begin
 --    ram_seq_dout
 --    cur_state
 --    cnt_out
+--    useParallelRead
 -- OUTPUTS:
 --    udp_txi.hdr.dst_ip_addr
 --    udp_txi.hdr.dst_port
@@ -213,14 +218,19 @@ begin
 			   next_state                   <= WAIT_FOR_TX_READY;
 			end if;
 		when WAIT_FOR_TX_READY =>
-   		udp_txi.hdr.data_length     <= std_logic_vector(unsigned(cnt_out) + 1 + to_unsigned(parallel_read_byte_cnt, 16));
-   		udp_txi.data.data_out_valid <= '1';
-   		udp_txi.data.data_out       <= ram_parallel(0);
+   		udp_txi.hdr.data_length         <= std_logic_vector(unsigned(cnt_out) + 1 + to_unsigned(parallel_read_byte_cnt, 16));
+   		--udp_txi.data.data_out_valid <= '1';
+   		udp_txi.data.data_out           <= ram_parallel(0);
 			
 			if udp_tx_data_out_ready = '1' then
 			   cnt_en                       <= '1';
+				udp_txi.data.data_out_valid  <= '1';
 			   
-			   next_state                   <= SEND_PARALLEL_DATA;
+				if useParallelRead = true then
+			      next_state                   <= SEND_PARALLEL_DATA;
+				else
+				   next_state                   <= SEND_SEQ_DATA;
+				end if;
 			else
 			   udp_tx_start                 <= '1';
 			   cnt_apre                     <= '1';  -- preset counter
@@ -323,8 +333,6 @@ end process counter;
 --         RAM_SEQ : PROCESS          --
 ----------------------------------------
 -- INPUTS:
---    areset
---    ram_seq_areset
 --    clk
 --    ram_seq_en
 --    ram_seq_addr
@@ -333,11 +341,9 @@ end process counter;
 -- OUTPUTS:
 --    ram_seq_dout
 ----------------------------------------
-ram_seq_proc : process(areset, ram_seq_areset, clk, ram_seq_en, ram_seq_addr, ram_seq_we, ram_seq_we)
+ram_seq_proc : process(clk, ram_seq_en, ram_seq_addr, ram_seq_we, ram_seq_we)
 begin
-   if areset = '1' or ram_seq_areset = '1' then
-	   ram_seq <= (others=>(others=>'0'));
-	elsif rising_edge(clk) then
+   if rising_edge(clk) then
 	   if ram_seq_en = '1' then
 		   if ram_seq_we = '1' then
 		      ram_seq(to_integer(unsigned(ram_seq_addr))) <= ram_seq_din;

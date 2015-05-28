@@ -1,0 +1,28 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/frameGrabberEthernetTB_isim_beh.exe -prj C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/frameGrabberEthernetTB_beh.prj work.frameGrabberEthernetTB 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/../../../our_stuff/ip_cores/udp_ip_stack/trunk/rtl/vhdl/axi.vhd" into library work
+Parsing VHDL file "C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/../../../our_stuff/ip_cores/udp_ip_stack/trunk/rtl/vhdl/arp_types.vhd" into library work
+Parsing VHDL file "C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/../../../our_stuff/ip_cores/udp_ip_stack/trunk/rtl/vhdl/ipv4_types.vhd" into library work
+Parsing VHDL file "C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/../../snippets/frameGrabberEthernet/frameGrabberEthernetTB_TYPES.vhd" into library work
+Parsing VHDL file "C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/frameGrabberEthernet.vhd" into library work
+Parsing VHDL file "C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/../../snippets/frameGrabberEthernet/frameGrabberEthernetTB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package axi
+Compiling package arp_types
+Compiling package ipv4_types
+Compiling package framegrabberethernettb_types
+Compiling package numeric_std
+Compiling architecture behavioral of entity frameGrabberEthernet [\frameGrabberEthernet(false,2048...]
+Compiling architecture behavior of entity framegrabberethernettb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 10 VHDL Units
+Built simulation executable C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/frameGrabberEthernetTB_isim_beh.exe
+Fuse Memory Usage: 36052 KB
+Fuse CPU Usage: 561 ms
