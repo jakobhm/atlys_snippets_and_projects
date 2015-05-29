@@ -15,6 +15,7 @@
 -- Revision: 
 -- Revision 0.01 - File Created
 -- Revision 1.00 - functional test successful
+-- Revision 1.01 - bugfix: phytxclk is input, not output
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
@@ -39,7 +40,7 @@ entity atlysWrapperBasic is
 		
 		-- Ethernet Mac
 		phyrst            : OUT std_logic;
-      phytxclk          : out std_logic;
+      phytxclk          : in std_logic;
  
       phyTXD            : OUT  std_logic_vector(7 downto 0);
 		phytxen           : OUT  std_logic; 

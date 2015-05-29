@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -109,17 +109,40 @@ Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_p
 Parsing package <axi>.
 Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\our_stuff\ip_cores\udp_ip_stack\trunk\rtl\vhdl\arp_types.vhd" into library work
 Parsing package <arp_types>.
+Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\BRAM.vhd" into library work
+Parsing entity <BRAM>.
+Parsing architecture <Behavioral> of entity <bram>.
+Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\arduino_tx.vhd" into library work
+Parsing entity <arduino_tx>.
+Parsing architecture <Behavioral> of entity <arduino_tx>.
 Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\our_stuff\ip_cores\udp_ip_stack\trunk\rtl\vhdl\ipv4_types.vhd" into library work
 Parsing package <ipv4_types>.
+Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\udpFrameGeneratorOutputFile.vhd" into library work
+Parsing package <udpFrameGeneratorOutputFile>.
+Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\send_to_arduino.vhd" into library work
+Parsing entity <send_to_arduino>.
+Parsing architecture <Behavioral> of entity <send_to_arduino>.
+Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\generateDataAndRepeat_TYPES.vhd" into library work
+Parsing package <generateDataAndRepeat_TYPES>.
+Parsing package body <generateDataAndRepeat_TYPES>.
+Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frame_logger.vhd" into library work
+Parsing entity <frame_logger>.
+Parsing architecture <Behavioral> of entity <frame_logger>.
 Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\our_stuff\snippets\swDebounce\sw_debounce.vhd" into library work
 Parsing entity <swDebounce>.
 Parsing architecture <Behavioral> of entity <swdebounce>.
 Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\our_stuff\snippets\btnDebounce\btn_debounce.vhd" into library work
 Parsing entity <btnDebounce>.
 Parsing architecture <Behavioral> of entity <btndebounce>.
+Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\generateDataAndRepeat.vhd" into library work
+Parsing entity <generateDataAndRepeat>.
+Parsing architecture <Behavioral> of entity <generatedataandrepeat>.
 Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" into library work
 Parsing entity <frameGrabberEthernet>.
 Parsing architecture <Behavioral> of entity <framegrabberethernet>.
+Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\buffer_and_send_to_arduino.vhd" into library work
+Parsing entity <buffer_and_send_to_arduino>.
+Parsing architecture <Behavioral> of entity <buffer_and_send_to_arduino>.
 Parsing VHDL file "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" into library work
 Parsing entity <atlysWrapperDebugUDPStack>.
 Parsing architecture <Behavioral> of entity <atlyswrapperdebugudpstack>.
@@ -135,21 +158,35 @@ Elaborating entity <btnDebounce> (architecture <Behavioral>) from library <work>
 Elaborating entity <swDebounce> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <frameGrabberEthernet> (architecture <Behavioral>) with generics from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 222: ram_parallel should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 244: ram_parallel should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 257: ram_parallel should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 265: ram_seq should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 278: ram_seq should be on the sensitivity list of the process
-INFO:HDLCompiler:679 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 282. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 290. Case statement is complete. others clause is never selected
 WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 142: Assignment to ram_seq_areset ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 343: Assignment to ram_seq_dout ignored, since the identifier is never used
-WARNING:HDLCompiler:92 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 371: ram_parallel_din should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 368: Assignment to ram_parallel_dout ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 225: Assignment to input_phyrxer ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 227: Assignment to input_phymdi ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 228: Assignment to input_phyint ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 138: Net <output_phytxclk> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 143: Net <output_phymdc> does not have a driver.
+WARNING:HDLCompiler:92 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 379: ram_parallel_din should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd" Line 376: Assignment to ram_parallel_dout ignored, since the identifier is never used
+
+Elaborating entity <generateDataAndRepeat> (architecture <Behavioral>) with generics from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\generateDataAndRepeat.vhd" Line 202. Case statement is complete. others clause is never selected
+
+Elaborating entity <buffer_and_send_to_arduino> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <frame_logger> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <BRAM> (architecture <Behavioral>) with generics from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frame_logger.vhd" Line 135. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frame_logger.vhd" Line 153. Case statement is complete. others clause is never selected
+
+Elaborating entity <send_to_arduino> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <arduino_tx> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\send_to_arduino.vhd" Line 172. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\send_to_arduino.vhd" Line 244. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 310: Assignment to input_phytxclk ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 311: Assignment to input_phyrxd ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 312: Assignment to input_phyrxdv ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 313: Assignment to input_phyrxer ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 315: Assignment to input_phymdi ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 316: Assignment to input_phyint ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" Line 181: Net <output_phymdc> does not have a driver.
+WARNING:Xst:2972 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 223. All outputs of instance <swDebounceComp> of block <swDebounce> are unconnected in block <atlysWrapperDebugUDPStack>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -157,17 +194,19 @@ WARNING:HDLCompiler:634 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippe
 
 Synthesizing Unit <atlysWrapperDebugUDPStack>.
     Related source file is "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd".
+WARNING:Xst:647 - Input <phyRXD> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <phytxclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <phyrxdv> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <phyrxer> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <phyint> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 165: Output port <BTN_O> of the instance <btnDebounceComp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 177: Output port <udp_txi_hdr_dst_ip_addr> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 177: Output port <udp_txi_hdr_dst_port> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 177: Output port <udp_txi_hdr_src_port> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 177: Output port <udp_txi_hdr_data_length> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 177: Output port <udp_txi_hdr_checksum> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 177: Output port <udp_tx_start> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 177: Output port <udp_txi_data_data_out_last> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
-WARNING:Xst:653 - Signal <output_phytxclk> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 223: Output port <SW_O> of the instance <swDebounceComp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 228: Output port <udp_txi_hdr_dst_ip_addr> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 228: Output port <udp_txi_hdr_dst_port> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 228: Output port <udp_txi_hdr_src_port> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 228: Output port <udp_txi_hdr_data_length> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 228: Output port <udp_txi_hdr_checksum> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 228: Output port <udp_tx_start> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\atlysWrapperDebugUDPStack.vhd" line 228: Output port <udp_txi_data_data_out_last> of the instance <frameGrabberEthernetComp> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <output_phymdc> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
@@ -198,40 +237,9 @@ Synthesizing Unit <btnDebounce>.
 	inferred 102 D-type flip-flop(s).
 Unit <btnDebounce> synthesized.
 
-Synthesizing Unit <swDebounce>.
-    Related source file is "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\our_stuff\snippets\swDebounce\sw_debounce.vhd".
-    Found 16-bit register for signal <sw0_cntr>.
-    Found 1-bit register for signal <sw1_reg>.
-    Found 16-bit register for signal <sw1_cntr>.
-    Found 1-bit register for signal <sw2_reg>.
-    Found 16-bit register for signal <sw2_cntr>.
-    Found 1-bit register for signal <sw3_reg>.
-    Found 16-bit register for signal <sw3_cntr>.
-    Found 1-bit register for signal <sw4_reg>.
-    Found 16-bit register for signal <sw4_cntr>.
-    Found 1-bit register for signal <sw5_reg>.
-    Found 16-bit register for signal <sw5_cntr>.
-    Found 1-bit register for signal <sw6_reg>.
-    Found 16-bit register for signal <sw6_cntr>.
-    Found 1-bit register for signal <sw7_reg>.
-    Found 16-bit register for signal <sw7_cntr>.
-    Found 1-bit register for signal <sw0_reg>.
-    Found 16-bit adder for signal <sw0_cntr[15]_GND_10_o_add_2_OUT> created at line 72.
-    Found 16-bit adder for signal <sw1_cntr[15]_GND_10_o_add_8_OUT> created at line 97.
-    Found 16-bit adder for signal <sw2_cntr[15]_GND_10_o_add_14_OUT> created at line 122.
-    Found 16-bit adder for signal <sw3_cntr[15]_GND_10_o_add_20_OUT> created at line 147.
-    Found 16-bit adder for signal <sw4_cntr[15]_GND_10_o_add_26_OUT> created at line 172.
-    Found 16-bit adder for signal <sw5_cntr[15]_GND_10_o_add_32_OUT> created at line 197.
-    Found 16-bit adder for signal <sw6_cntr[15]_GND_10_o_add_38_OUT> created at line 222.
-    Found 16-bit adder for signal <sw7_cntr[15]_GND_10_o_add_44_OUT> created at line 247.
-    Summary:
-	inferred   8 Adder/Subtractor(s).
-	inferred 136 D-type flip-flop(s).
-Unit <swDebounce> synthesized.
-
 Synthesizing Unit <frameGrabberEthernet>.
     Related source file is "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frameGrabberEthernet.vhd".
-        useParallelRead = true
+        useParallelRead = false
         seq_read_byte_cnt = 2048
         parallel_read_byte_cnt = 11
         ram_addr_width = 14
@@ -241,13 +249,29 @@ Synthesizing Unit <frameGrabberEthernet>.
         udp_checksum = "0000000000000000"
 WARNING:Xst:647 - Input <udp_tx_result> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 3-bit register for signal <cur_state>.
-    Found 14-bit register for signal <cnt_out>.
+    Found 8-bit register for signal <ram_seq_dout>.
+    Found 1-bit register for signal <cnt_out<13>>.
+    Found 1-bit register for signal <cnt_out<12>>.
+    Found 1-bit register for signal <cnt_out<11>>.
+    Found 1-bit register for signal <cnt_out<10>>.
+    Found 1-bit register for signal <cnt_out<9>>.
+    Found 1-bit register for signal <cnt_out<8>>.
+    Found 1-bit register for signal <cnt_out<7>>.
+    Found 1-bit register for signal <cnt_out<6>>.
+    Found 1-bit register for signal <cnt_out<5>>.
+    Found 1-bit register for signal <cnt_out<4>>.
+    Found 1-bit register for signal <cnt_out<3>>.
+    Found 1-bit register for signal <cnt_out<2>>.
+    Found 1-bit register for signal <cnt_out<1>>.
+    Found 1-bit register for signal <cnt_out<0>>.
+INFO:Xst:1799 - State send_parallel_data is never reached in FSM <cur_state>.
+INFO:Xst:1799 - State send_parallel_data_last is never reached in FSM <cur_state>.
     Found finite state machine <FSM_0> for signal <cur_state>.
     -----------------------------------------------------------------------
     | States             | 8                                              |
-    | Transitions        | 13                                             |
+    | Transitions        | 10                                             |
     | Inputs             | 3                                              |
-    | Outputs            | 9                                              |
+    | Outputs            | 10                                             |
     | Clock              | clk (rising_edge)                              |
     | Reset              | areset (positive)                              |
     | Reset type         | asynchronous                                   |
@@ -257,7 +281,7 @@ WARNING:Xst:647 - Input <udp_tx_result> is never used. This port will be preserv
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 14-bit adder for signal <cnt_out[13]_GND_12_o_add_33_OUT> created at line 1241.
-    Found 16-bit adder for signal <GND_12_o_GND_12_o_add_34_OUT> created at line 276.
+    Found 16-bit adder for signal <GND_12_o_GND_12_o_add_34_OUT> created at line 284.
     Found 14-bit subtractor for signal <GND_12_o_GND_12_o_sub_31_OUT<13:0>> created at line 1308.
     Found 11-bit subtractor for signal <GND_12_o_GND_12_o_sub_36_OUT<10:0>> created at line 1308.
     Found 2048x8-bit dual-port RAM <Mram_RAM_SEQ> for signal <RAM_SEQ>.
@@ -274,47 +298,173 @@ WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<3>>. 
 WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <RAM_PARALLEL<0><7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <fsm_proc.ram_seq_last_addr<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 14-bit comparator equal for signal <GND_12_o_cnt_out[13]_equal_32_o> created at line 269
+    Found 14-bit comparator equal for signal <GND_12_o_cnt_out[13]_equal_32_o> created at line 277
     Summary:
 	inferred   1 RAM(s).
 	inferred   4 Adder/Subtractor(s).
 	inferred  14 D-type flip-flop(s).
-	inferred  15 Latch(s).
+	inferred  14 Latch(s).
 	inferred   1 Comparator(s).
-	inferred  41 Multiplexer(s).
+	inferred  35 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <frameGrabberEthernet> synthesized.
+
+Synthesizing Unit <generateDataAndRepeat>.
+    Related source file is "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\generateDataAndRepeat.vhd".
+        generatePreamble = true
+        inputClkHz = 125000000
+        repeatTimeMS = 3000
+    Found 3-bit register for signal <fsmReg_curStateReg>.
+    Found 29-bit register for signal <counterReg_counterReg>.
+INFO:Xst:1799 - State state_wait_to_data_out is never reached in FSM <fsmReg_curStateReg>.
+    Found finite state machine <FSM_1> for signal <fsmReg_curStateReg>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 13                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | areset (positive)                              |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | state_reset                                    |
+    | Power Up State     | state_reset                                    |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 29-bit adder for signal <counterReg_counterReg[28]_GND_207_o_add_13_OUT> created at line 1241.
+    Found 64x8-bit Read Only RAM for signal <counterReg_counterReg[5]_GND_207_o_wide_mux_4_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <generateDataAndRepeat> synthesized.
+
+Synthesizing Unit <buffer_and_send_to_arduino>.
+    Related source file is "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\buffer_and_send_to_arduino.vhd".
+    Summary:
+	no macro.
+Unit <buffer_and_send_to_arduino> synthesized.
+
+Synthesizing Unit <frame_logger>.
+    Related source file is "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\frame_logger.vhd".
+        ram_addr_width = 11
+        ram_word_width = 8
+    Found 1-bit register for signal <rm_hold>.
+    Found 2-bit register for signal <cur_state>.
+    Found 11-bit register for signal <rm_ram_addr_s>.
+    Found 1-bit register for signal <rm_ram_en_s>.
+    Found 8-bit register for signal <din_s>.
+    Found 8-bit register for signal <din_tmp>.
+    Found 11-bit adder for signal <rm_ram_addr_s[10]_GND_209_o_add_11_OUT> created at line 1241.
+    Found 4x1-bit Read Only RAM for signal <fsm_ram_en_s>
+    Found 1-bit 4-to-1 multiplexer for signal <cur_state[1]_cur_state[1]_wide_mux_7_OUT<1>> created at line 112.
+    Found 1-bit 4-to-1 multiplexer for signal <cur_state[1]_cur_state[1]_wide_mux_7_OUT<0>> created at line 112.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  31 D-type flip-flop(s).
+	inferred   2 Latch(s).
+	inferred  13 Multiplexer(s).
+Unit <frame_logger> synthesized.
+
+Synthesizing Unit <BRAM>.
+    Related source file is "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\BRAM.vhd".
+        addr_width = 11
+        word_width = 8
+WARNING:Xst:647 - Input <addr<10:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 256x8-bit single-port RAM <Mram_BRAM> for signal <BRAM>.
+    Found 8-bit register for signal <dout>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <BRAM> synthesized.
+
+Synthesizing Unit <send_to_arduino>.
+    Related source file is "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\send_to_arduino.vhd".
+    Found 4-bit register for signal <cur_state>.
+    Found 13-bit register for signal <clk_gen_125MHz_to_10kHz.counter>.
+    Found 1-bit register for signal <clk_10kHz>.
+    Found 11-bit register for signal <addr_counter>.
+    Found 13-bit adder for signal <clk_gen_125MHz_to_10kHz.counter[12]_GND_214_o_add_0_OUT> created at line 96.
+    Found 11-bit adder for signal <addr_counter[10]_GND_214_o_add_4_OUT> created at line 1241.
+    Found 16x1-bit Read Only RAM for signal <inc_reset>
+    Found 8x1-bit Read Only RAM for signal <ram_en>
+    Found 4x1-bit Read Only RAM for signal <inc_addr>
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 11-bit comparator greater for signal <ram_last_addr[10]_addr_counter[10]_LessThan_21_o> created at line 165
+    Summary:
+	inferred   3 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   4 Latch(s).
+	inferred   1 Comparator(s).
+	inferred  92 Multiplexer(s).
+Unit <send_to_arduino> synthesized.
+
+Synthesizing Unit <arduino_tx>.
+    Related source file is "C:\Users\Jakob Wittmann\Documents\GitHub\atlys_snippets_and_projects\jakobs_stuff\projects\debug_udp_stack\arduino_tx.vhd".
+    Found 1-bit register for signal <nibble>.
+    Found 4-bit register for signal <txd_out>.
+    Found 1-bit register for signal <en_out>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <arduino_tx> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
+# RAMs                                                 : 7
+ 16x1-bit single-port Read Only RAM                    : 1
  2048x8-bit dual-port RAM                              : 1
-# Adders/Subtractors                                   : 18
+ 256x8-bit single-port RAM                             : 1
+ 4x1-bit single-port Read Only RAM                     : 2
+ 64x8-bit single-port Read Only RAM                    : 1
+ 8x1-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 14
+ 11-bit adder                                          : 2
  11-bit subtractor                                     : 1
+ 13-bit adder                                          : 1
  14-bit adder                                          : 1
  14-bit subtractor                                     : 1
- 16-bit adder                                          : 15
-# Registers                                            : 29
- 1-bit register                                        : 14
- 14-bit register                                       : 1
- 16-bit register                                       : 14
-# Latches                                              : 15
- 1-bit latch                                           : 15
-# Comparators                                          : 1
+ 16-bit adder                                          : 7
+ 29-bit adder                                          : 1
+# Registers                                            : 41
+ 1-bit register                                        : 25
+ 11-bit register                                       : 2
+ 13-bit register                                       : 1
+ 16-bit register                                       : 6
+ 2-bit register                                        : 1
+ 29-bit register                                       : 1
+ 4-bit register                                        : 2
+ 8-bit register                                        : 3
+# Latches                                              : 20
+ 1-bit latch                                           : 20
+# Comparators                                          : 2
+ 11-bit comparator greater                             : 1
  14-bit comparator equal                               : 1
-# Multiplexers                                         : 41
- 1-bit 2-to-1 multiplexer                              : 25
- 11-bit 2-to-1 multiplexer                             : 1
- 14-bit 2-to-1 multiplexer                             : 5
+# Multiplexers                                         : 144
+ 1-bit 2-to-1 multiplexer                              : 104
+ 1-bit 4-to-1 multiplexer                              : 2
+ 11-bit 2-to-1 multiplexer                             : 12
+ 13-bit 2-to-1 multiplexer                             : 1
+ 14-bit 2-to-1 multiplexer                             : 6
  16-bit 2-to-1 multiplexer                             : 1
- 8-bit 2-to-1 multiplexer                              : 9
-# FSMs                                                 : 1
-# Xors                                                 : 14
- 1-bit xor2                                            : 14
+ 4-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 17
+# FSMs                                                 : 2
+# Xors                                                 : 6
+ 1-bit xor2                                            : 6
 
 =========================================================================
 
@@ -322,7 +472,25 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1710 - FF/Latch <RAM_PARALLEL<0>_7> (without init value) has a constant value of 0 in block <frameGrabberEthernetComp>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <BRAM>.
+INFO:Xst:3226 - The RAM <Mram_BRAM> will be implemented as a BLOCK RAM, absorbing the following register(s): <dout>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     enA            | connected to signal <en>            | high     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <din>           |          |
+    |     doA            | connected to signal <dout>          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <BRAM> synthesized (advanced).
 
 Synthesizing (advanced) Unit <btnDebounce>.
 The following registers are absorbed into counter <btn0_cntr>: 1 register on signal <btn0_cntr>.
@@ -334,7 +502,6 @@ The following registers are absorbed into counter <reset_cntr>: 1 register on si
 Unit <btnDebounce> synthesized (advanced).
 
 Synthesizing (advanced) Unit <frameGrabberEthernet>.
-The following registers are absorbed into counter <cnt_out>: 1 register on signal <cnt_out>.
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_SEQ> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
@@ -348,56 +515,122 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_SEQ> will be implemented on LUTs
     -----------------------------------------------------------------------
     | Port B                                                              |
     |     aspect ratio   | 2048-word x 8-bit                   |          |
-    |     addrB          | connected to signal <_n0404>        |          |
+    |     addrB          | connected to signal <_n0408>        |          |
     |     doB            | connected to internal node          |          |
     -----------------------------------------------------------------------
 Unit <frameGrabberEthernet> synthesized (advanced).
 
-Synthesizing (advanced) Unit <swDebounce>.
-The following registers are absorbed into counter <sw0_cntr>: 1 register on signal <sw0_cntr>.
-The following registers are absorbed into counter <sw1_cntr>: 1 register on signal <sw1_cntr>.
-The following registers are absorbed into counter <sw2_cntr>: 1 register on signal <sw2_cntr>.
-The following registers are absorbed into counter <sw3_cntr>: 1 register on signal <sw3_cntr>.
-The following registers are absorbed into counter <sw4_cntr>: 1 register on signal <sw4_cntr>.
-The following registers are absorbed into counter <sw5_cntr>: 1 register on signal <sw5_cntr>.
-The following registers are absorbed into counter <sw6_cntr>: 1 register on signal <sw6_cntr>.
-The following registers are absorbed into counter <sw7_cntr>: 1 register on signal <sw7_cntr>.
-Unit <swDebounce> synthesized (advanced).
+Synthesizing (advanced) Unit <frame_logger>.
+The following registers are absorbed into counter <rm_ram_addr_s>: 1 register on signal <rm_ram_addr_s>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_fsm_ram_en_s> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <cur_state>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <fsm_ram_en_s>  |          |
+    -----------------------------------------------------------------------
+Unit <frame_logger> synthesized (advanced).
+
+Synthesizing (advanced) Unit <generateDataAndRepeat>.
+The following registers are absorbed into counter <counterReg_counterReg>: 1 register on signal <counterReg_counterReg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_counterReg_counterReg[5]_GND_207_o_wide_mux_4_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <counterReg_counterReg<5:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <generateDataAndRepeat> synthesized (advanced).
+
+Synthesizing (advanced) Unit <send_to_arduino>.
+The following registers are absorbed into counter <addr_counter>: 1 register on signal <addr_counter>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_inc_reset> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 1-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <cur_state>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <inc_reset>     |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_inc_addr> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(cur_state<3>,cur_state<0>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <inc_addr>      |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ram_en> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(cur_state<3:2>,cur_state<0>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <ram_en>        |          |
+    -----------------------------------------------------------------------
+Unit <send_to_arduino> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
+# RAMs                                                 : 7
+ 16x1-bit single-port distributed Read Only RAM        : 1
  2048x8-bit dual-port distributed RAM                  : 1
-# Adders/Subtractors                                   : 4
+ 256x8-bit single-port block RAM                       : 1
+ 4x1-bit single-port distributed Read Only RAM         : 2
+ 64x8-bit single-port distributed Read Only RAM        : 1
+ 8x1-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 5
  11-bit subtractor                                     : 1
+ 13-bit adder                                          : 1
  14-bit adder                                          : 1
  14-bit subtractor                                     : 1
  16-bit adder                                          : 1
-# Counters                                             : 15
- 14-bit up counter                                     : 1
- 16-bit up counter                                     : 14
-# Registers                                            : 14
- Flip-Flops                                            : 14
-# Comparators                                          : 1
+# Counters                                             : 9
+ 11-bit up counter                                     : 2
+ 16-bit up counter                                     : 6
+ 29-bit up counter                                     : 1
+# Registers                                            : 64
+ Flip-Flops                                            : 64
+# Comparators                                          : 2
+ 11-bit comparator greater                             : 1
  14-bit comparator equal                               : 1
-# Multiplexers                                         : 39
- 1-bit 2-to-1 multiplexer                              : 23
- 11-bit 2-to-1 multiplexer                             : 1
- 14-bit 2-to-1 multiplexer                             : 5
+# Multiplexers                                         : 141
+ 1-bit 2-to-1 multiplexer                              : 103
+ 1-bit 4-to-1 multiplexer                              : 2
+ 11-bit 2-to-1 multiplexer                             : 11
+ 13-bit 2-to-1 multiplexer                             : 1
+ 14-bit 2-to-1 multiplexer                             : 6
  16-bit 2-to-1 multiplexer                             : 1
- 8-bit 2-to-1 multiplexer                              : 9
-# FSMs                                                 : 1
-# Xors                                                 : 14
- 1-bit xor2                                            : 14
+ 4-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 16
+# FSMs                                                 : 2
+# Xors                                                 : 6
+ 1-bit xor2                                            : 6
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <RAM_PARALLEL<0>_7> (without init value) has a constant value of 0 in block <frameGrabberEthernet>. This FF/Latch will be trimmed during the optimization process.
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <frameGrabberEthernetComp/FSM_0> on signal <cur_state[1:3]> with user encoding.
 -------------------------------------
@@ -407,35 +640,63 @@ Optimizing FSM <frameGrabberEthernetComp/FSM_0> on signal <cur_state[1:3]> with 
  idle                    | 001
  data_read               | 010
  wait_for_tx_ready       | 011
- send_parallel_data      | 100
- send_parallel_data_last | 101
+ send_parallel_data      | unreached
+ send_parallel_data_last | unreached
  send_seq_data           | 110
  send_seq_data_last      | 111
 -------------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <generateDataAndRepeat_comp/FSM_1> on signal <fsmReg_curStateReg[1:3]> with user encoding.
+----------------------------------------
+ State                      | Encoding
+----------------------------------------
+ state_reset                | 000
+ state_wait                 | 001
+ state_wait_to_preamble     | 010
+ state_preamble             | 011
+ state_wait_to_data_out     | unreached
+ state_preamble_to_data_out | 101
+ state_data_out             | 110
+----------------------------------------
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    cnt_out_0 in unit <frameGrabberEthernet>
+
 
 Optimizing unit <atlysWrapperDebugUDPStack> ...
 
-Optimizing unit <swDebounce> ...
+Optimizing unit <btnDebounce> ...
 
 Optimizing unit <frameGrabberEthernet> ...
 
-Optimizing unit <btnDebounce> ...
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_14> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_13> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_15> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_11> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_10> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_12> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_8> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_7> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_9> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_6> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_5> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_4> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_3> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_1> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_0> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_cntr_2> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+Optimizing unit <generateDataAndRepeat> ...
+
+Optimizing unit <frame_logger> ...
+
+Optimizing unit <send_to_arduino> ...
+
+Optimizing unit <arduino_tx> ...
 WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_15> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
 WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_14> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
 WARNING:Xst:2677 - Node <btnDebounceComp/btn2_cntr_13> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
@@ -501,17 +762,19 @@ WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_2> of sequential type is unco
 WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_1> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
 WARNING:Xst:2677 - Node <btnDebounceComp/btn3_cntr_0> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
 WARNING:Xst:2677 - Node <btnDebounceComp/btn0_reg> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
-WARNING:Xst:2677 - Node <btnDebounceComp/btn4_reg> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
 WARNING:Xst:2677 - Node <btnDebounceComp/btn2_reg> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
 WARNING:Xst:2677 - Node <btnDebounceComp/btn1_reg> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
 WARNING:Xst:2677 - Node <btnDebounceComp/btn3_reg> of sequential type is unconnected in block <atlysWrapperDebugUDPStack>.
+INFO:Xst:3203 - The FF/Latch <bufferAndSendToArduino_comp/frame_logger_comp/rm_hold> in Unit <atlysWrapperDebugUDPStack> is the opposite to the following FF/Latch, which will be removed : <bufferAndSendToArduino_comp/frame_logger_comp/rm_ram_en_s> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block atlysWrapperDebugUDPStack, actual ratio is 3.
+Found area constraint ratio of 100 (+ 5) on block atlysWrapperDebugUDPStack, actual ratio is 1.
 FlipFlop frameGrabberEthernetComp/cur_state_FSM_FFd1 has been replicated 1 time(s)
-FlipFlop frameGrabberEthernetComp/cur_state_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop frameGrabberEthernetComp/cur_state_FSM_FFd2 has been replicated 2 time(s)
 FlipFlop frameGrabberEthernetComp/cur_state_FSM_FFd3 has been replicated 1 time(s)
+FlipFlop generateDataAndRepeat_comp/fsmReg_curStateReg_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop generateDataAndRepeat_comp/fsmReg_curStateReg_FSM_FFd2 has been replicated 2 time(s)
 
 Final Macro Processing ...
 
@@ -519,8 +782,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 173
- Flip-Flops                                            : 173
+# Registers                                            : 156
+ Flip-Flops                                            : 156
 
 =========================================================================
 
@@ -543,34 +806,39 @@ Top Level Output File Name         : atlysWrapperDebugUDPStack.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 807
+# BELS                             : 695
 #      GND                         : 1
-#      INV                         : 23
-#      LUT1                        : 149
-#      LUT2                        : 33
-#      LUT3                        : 24
-#      LUT4                        : 7
-#      LUT5                        : 49
-#      LUT6                        : 174
-#      MUXCY                       : 167
-#      MUXF7                       : 8
+#      INV                         : 21
+#      LUT1                        : 93
+#      LUT2                        : 22
+#      LUT3                        : 78
+#      LUT4                        : 57
+#      LUT5                        : 26
+#      LUT6                        : 121
+#      MUXCY                       : 127
+#      MUXF7                       : 17
+#      MUXF8                       : 8
 #      VCC                         : 1
-#      XORCY                       : 171
-# FlipFlops/Latches                : 187
-#      FD                          : 17
-#      FDC                         : 6
-#      FDCE                        : 14
-#      FDE                         : 1
-#      FDR                         : 135
+#      XORCY                       : 123
+# FlipFlops/Latches                : 177
+#      FD                          : 49
+#      FDC                         : 57
+#      FDCE                        : 12
+#      FDE                         : 6
+#      FDP                         : 1
+#      FDPE                        : 1
+#      FDR                         : 30
 #      LD                          : 14
-# RAMS                             : 128
-#      RAM64M                      : 64
-#      RAM64X1D                    : 64
+#      LD_1                        : 6
+#      LDC                         : 1
+# RAMS                             : 129
+#      RAM128X1D                   : 128
+#      RAMB8BWER                   : 1
 # Clock Buffers                    : 1
 #      BUFG                        : 1
-# IO Buffers                       : 41
-#      IBUF                        : 19
-#      OBUF                        : 22
+# IO Buffers                       : 30
+#      IBUF                        : 3
+#      OBUF                        : 27
 
 Device utilization summary:
 ---------------------------
@@ -579,24 +847,27 @@ Selected Device : 6slx45csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             187  out of  54576     0%  
- Number of Slice LUTs:                  843  out of  27288     3%  
-    Number used as Logic:               459  out of  27288     1%  
-    Number used as Memory:              384  out of   6408     5%  
-       Number used as RAM:              384
+ Number of Slice Registers:             176  out of  54576     0%  
+ Number of Slice LUTs:                  930  out of  27288     3%  
+    Number used as Logic:               418  out of  27288     1%  
+    Number used as Memory:              512  out of   6408     7%  
+       Number used as RAM:              512
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    846
-   Number with an unused Flip Flop:     659  out of    846    77%  
-   Number with an unused LUT:             3  out of    846     0%  
-   Number of fully used LUT-FF pairs:   184  out of    846    21%  
-   Number of unique control sets:        14
+ Number of LUT Flip Flop pairs used:    956
+   Number with an unused Flip Flop:     780  out of    956    81%  
+   Number with an unused LUT:            26  out of    956     2%  
+   Number of fully used LUT-FF pairs:   150  out of    956    15%  
+   Number of unique control sets:        18
 
 IO Utilization: 
- Number of IOs:                          49
- Number of bonded IOBs:                  41  out of    218    18%  
+ Number of IOs:                          55
+ Number of bonded IOBs:                  30  out of    218    13%  
+    IOB Flip Flops/Latches:               1
 
 Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    116     0%  
+    Number using Block RAM only:          1
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
 
 ---------------------------
@@ -617,13 +888,17 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
--------------------------------------------------------------------------------------------------+----------------------------------------------------------------+-------+
-Clock Signal                                                                                     | Clock buffer(FF name)                                          | Load  |
--------------------------------------------------------------------------------------------------+----------------------------------------------------------------+-------+
-phyrxclk                                                                                         | IBUF+BUFG                                                      | 301   |
-frameGrabberEthernetComp/ram_parallel_aload(frameGrabberEthernetComp/Mmux_ram_parallel_aload11:O)| NONE(*)(frameGrabberEthernetComp/fsm_proc.ram_seq_last_addr_13)| 14    |
--------------------------------------------------------------------------------------------------+----------------------------------------------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
+----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+-------+
+Clock Signal                                                                                                                      | Clock buffer(FF name)                                                           | Load  |
+----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+-------+
+phyrxclk                                                                                                                          | IBUF+BUFG                                                                       | 268   |
+frameGrabberEthernetComp/ram_parallel_aload(frameGrabberEthernetComp/Mmux_ram_parallel_aload11:O)                                 | NONE(*)(frameGrabberEthernetComp/fsm_proc.ram_seq_last_addr_0)                  | 14    |
+btnDebounceComp/reset_reg                                                                                                         | NONE(bufferAndSendToArduino_comp/frame_logger_comp/next_state_0)                | 6     |
+bufferAndSendToArduino_comp/send_to_arduino_comp/Mram_inc_addr(bufferAndSendToArduino_comp/send_to_arduino_comp/Mram_inc_addr11:O)| NONE(*)(bufferAndSendToArduino_comp/send_to_arduino_comp/addr_counter_10)       | 11    |
+bufferAndSendToArduino_comp/send_to_arduino_comp/clk_10kHz                                                                        | NONE(bufferAndSendToArduino_comp/send_to_arduino_comp/arduino_tx_comp/txd_out_3)| 6     |
+frameGrabberEthernetComp/cur_state_FSM_FFd1-In1(frameGrabberEthernetComp/cur_state_FSM_FFd1-In111:O)                              | NONE(*)(frameGrabberEthernetComp/cnt_out_0_LDC)                                 | 1     |
+----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -636,9 +911,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.352ns (Maximum Frequency: 229.787MHz)
-   Minimum input arrival time before clock: 5.587ns
-   Maximum output required time after clock: 11.667ns
+   Minimum period: 4.239ns (Maximum Frequency: 235.910MHz)
+   Minimum input arrival time before clock: 2.779ns
+   Maximum output required time after clock: 8.095ns
    Maximum combinational path delay: 4.372ns
 
 Timing Details:
@@ -647,77 +922,130 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'phyrxclk'
-  Clock period: 4.352ns (frequency: 229.787MHz)
-  Total number of paths / destination ports: 10108 / 1879
+  Clock period: 4.239ns (frequency: 235.910MHz)
+  Total number of paths / destination ports: 13410 / 1408
 -------------------------------------------------------------------------
-Delay:               4.352ns (Levels of Logic = 1)
-  Source:            frameGrabberEthernetComp/cur_state_FSM_FFd3 (FF)
-  Destination:       frameGrabberEthernetComp/Mram_RAM_SEQ961 (RAM)
+Delay:               4.239ns (Levels of Logic = 3)
+  Source:            frameGrabberEthernetComp/cnt_out_7 (FF)
+  Destination:       frameGrabberEthernetComp/Mram_RAM_SEQ113 (RAM)
   Source Clock:      phyrxclk rising
   Destination Clock: phyrxclk rising
 
-  Data Path: frameGrabberEthernetComp/cur_state_FSM_FFd3 to frameGrabberEthernetComp/Mram_RAM_SEQ961
+  Data Path: frameGrabberEthernetComp/cnt_out_7 to frameGrabberEthernetComp/Mram_RAM_SEQ113
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             63   0.447   1.634  frameGrabberEthernetComp/cur_state_FSM_FFd3 (frameGrabberEthernetComp/cur_state_FSM_FFd3)
-     LUT3:I2->O          256   0.205   2.066  frameGrabberEthernetComp/Mmux__n040411 (frameGrabberEthernetComp/_n0404<0>)
-     RAM64X1D:DPRA0           -0.215          frameGrabberEthernetComp/Mram_RAM_SEQ661
+     FDC:C->Q             21   0.447   1.218  frameGrabberEthernetComp/cnt_out_7 (frameGrabberEthernetComp/cnt_out_7)
+     LUT3:I1->O            1   0.203   0.580  frameGrabberEthernetComp/inst_LPM_DECODE0_SW0 (N2)
+     LUT6:I5->O            1   0.205   0.580  frameGrabberEthernetComp/inst_LPM_DECODE0 (frameGrabberEthernetComp/N2)
+     LUT2:I1->O            8   0.205   0.802  frameGrabberEthernetComp/write_ctrl (frameGrabberEthernetComp/write_ctrl)
+     RAM128X1D:WE              0.000          frameGrabberEthernetComp/Mram_RAM_SEQ1
     ----------------------------------------
-    Total                      4.352ns (0.652ns logic, 3.700ns route)
-                                       (15.0% logic, 85.0% route)
+    Total                      4.239ns (1.060ns logic, 3.179ns route)
+                                       (25.0% logic, 75.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'bufferAndSendToArduino_comp/send_to_arduino_comp/Mram_inc_addr'
+  Clock period: 1.961ns (frequency: 510.061MHz)
+  Total number of paths / destination ports: 66 / 11
+-------------------------------------------------------------------------
+Delay:               1.961ns (Levels of Logic = 12)
+  Source:            bufferAndSendToArduino_comp/send_to_arduino_comp/addr_counter_0 (FF)
+  Destination:       bufferAndSendToArduino_comp/send_to_arduino_comp/addr_counter_10 (FF)
+  Source Clock:      bufferAndSendToArduino_comp/send_to_arduino_comp/Mram_inc_addr rising
+  Destination Clock: bufferAndSendToArduino_comp/send_to_arduino_comp/Mram_inc_addr rising
+
+  Data Path: bufferAndSendToArduino_comp/send_to_arduino_comp/addr_counter_0 to bufferAndSendToArduino_comp/send_to_arduino_comp/addr_counter_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.683  bufferAndSendToArduino_comp/send_to_arduino_comp/addr_counter_0 (bufferAndSendToArduino_comp/send_to_arduino_comp/addr_counter_0)
+     INV:I->O              1   0.206   0.000  bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_lut<0>_INV_0 (bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<0> (bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<1> (bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<2> (bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<3> (bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<4> (bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<5> (bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<6> (bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<7> (bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<8> (bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<8>)
+     MUXCY:CI->O           0   0.019   0.000  bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<9> (bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_cy<9>)
+     XORCY:CI->O           1   0.180   0.000  bufferAndSendToArduino_comp/send_to_arduino_comp/Mcount_addr_counter_xor<10> (bufferAndSendToArduino_comp/send_to_arduino_comp/Result<10>)
+     FDC:D                     0.102          bufferAndSendToArduino_comp/send_to_arduino_comp/addr_counter_10
+    ----------------------------------------
+    Total                      1.961ns (1.278ns logic, 0.683ns route)
+                                       (65.2% logic, 34.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'bufferAndSendToArduino_comp/send_to_arduino_comp/clk_10kHz'
+  Clock period: 2.048ns (frequency: 488.317MHz)
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Delay:               2.048ns (Levels of Logic = 1)
+  Source:            bufferAndSendToArduino_comp/send_to_arduino_comp/arduino_tx_comp/nibble (FF)
+  Destination:       bufferAndSendToArduino_comp/send_to_arduino_comp/arduino_tx_comp/nibble (FF)
+  Source Clock:      bufferAndSendToArduino_comp/send_to_arduino_comp/clk_10kHz rising
+  Destination Clock: bufferAndSendToArduino_comp/send_to_arduino_comp/clk_10kHz rising
+
+  Data Path: bufferAndSendToArduino_comp/send_to_arduino_comp/arduino_tx_comp/nibble to bufferAndSendToArduino_comp/send_to_arduino_comp/arduino_tx_comp/nibble
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.447   0.714  bufferAndSendToArduino_comp/send_to_arduino_comp/arduino_tx_comp/nibble (bufferAndSendToArduino_comp/send_to_arduino_comp/arduino_tx_comp/nibble)
+     INV:I->O              1   0.206   0.579  bufferAndSendToArduino_comp/send_to_arduino_comp/arduino_tx_comp/nibble_INV_148_o1_INV_0 (bufferAndSendToArduino_comp/send_to_arduino_comp/arduino_tx_comp/nibble_INV_148_o)
+     FDR:D                     0.102          bufferAndSendToArduino_comp/send_to_arduino_comp/arduino_tx_comp/nibble
+    ----------------------------------------
+    Total                      2.048ns (0.755ns logic, 1.293ns route)
+                                       (36.9% logic, 63.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'phyrxclk'
-  Total number of paths / destination ports: 1696 / 1314
+  Total number of paths / destination ports: 32 / 32
 -------------------------------------------------------------------------
-Offset:              5.587ns (Levels of Logic = 3)
-  Source:            phyrxdv (PAD)
-  Destination:       frameGrabberEthernetComp/Mram_RAM_SEQ961 (RAM)
+Offset:              2.779ns (Levels of Logic = 2)
+  Source:            BTN<5> (PAD)
+  Destination:       btnDebounceComp/btn4_cntr_14 (FF)
   Destination Clock: phyrxclk rising
 
-  Data Path: phyrxdv to frameGrabberEthernetComp/Mram_RAM_SEQ961
+  Data Path: BTN<5> to btnDebounceComp/btn4_cntr_14
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            44   1.222   1.691  phyrxdv_IBUF (phyrxdv_IBUF)
-     LUT4:I1->O           31   0.205   1.278  frameGrabberEthernetComp/dv_01 (frameGrabberEthernetComp/dv_0_0)
-     LUT6:I5->O            4   0.205   0.683  frameGrabberEthernetComp/write_ctrl31 (frameGrabberEthernetComp/write_ctrl31)
-     RAM64M:WE                 0.304          frameGrabberEthernetComp/Mram_RAM_SEQ32
+     IBUF:I->O            16   1.222   1.252  BTN_5_IBUF (BTN_5_IBUF)
+     LUT4:I0->O            1   0.203   0.000  btnDebounceComp/btn4_cntr_14_rstpot (btnDebounceComp/btn4_cntr_14_rstpot)
+     FD:D                      0.102          btnDebounceComp/btn4_cntr_14
     ----------------------------------------
-    Total                      5.587ns (1.936ns logic, 3.651ns route)
-                                       (34.7% logic, 65.3% route)
+    Total                      2.779ns (1.527ns logic, 1.252ns route)
+                                       (55.0% logic, 45.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'phyrxclk'
-  Total number of paths / destination ports: 1387 / 17
+  Total number of paths / destination ports: 181 / 11
 -------------------------------------------------------------------------
-Offset:              10.691ns (Levels of Logic = 7)
-  Source:            frameGrabberEthernetComp/cur_state_FSM_FFd3 (FF)
+Offset:              6.869ns (Levels of Logic = 4)
+  Source:            frameGrabberEthernetComp/cur_state_FSM_FFd1 (FF)
   Destination:       phyTXD<7> (PAD)
   Source Clock:      phyrxclk rising
 
-  Data Path: frameGrabberEthernetComp/cur_state_FSM_FFd3 to phyTXD<7>
+  Data Path: frameGrabberEthernetComp/cur_state_FSM_FFd1 to phyTXD<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             63   0.447   1.634  frameGrabberEthernetComp/cur_state_FSM_FFd3 (frameGrabberEthernetComp/cur_state_FSM_FFd3)
-     LUT4:I3->O          256   0.205   2.066  frameGrabberEthernetComp/Mmux__n040431 (frameGrabberEthernetComp/_n0404<1>)
-     RAM64X1D:DPRA1->DPO    1   0.205   0.827  frameGrabberEthernetComp/Mram_RAM_SEQ911 (frameGrabberEthernetComp/N524)
-     LUT6:I2->O            1   0.203   0.827  frameGrabberEthernetComp/inst_LPM_MUX6_81 (frameGrabberEthernetComp/inst_LPM_MUX6_81)
-     LUT6:I2->O            1   0.203   0.000  frameGrabberEthernetComp/inst_LPM_MUX6_3 (frameGrabberEthernetComp/inst_LPM_MUX6_3)
-     MUXF7:I1->O           1   0.140   0.580  frameGrabberEthernetComp/inst_LPM_MUX6_2_f7 (frameGrabberEthernetComp/cnt_out[10]_read_port_29_OUT<6>)
-     LUT3:I2->O            1   0.205   0.579  frameGrabberEthernetComp/Mmux_udp_txi_data_data_out71 (phyTXD_6_OBUF)
-     OBUF:I->O                 2.571          phyTXD_6_OBUF (phyTXD<6>)
+     FDC:C->Q             77   0.447   1.726  frameGrabberEthernetComp/cur_state_FSM_FFd1 (frameGrabberEthernetComp/cur_state_FSM_FFd1)
+     LUT6:I5->O           16   0.205   1.004  frameGrabberEthernetComp/_n0408<9> (frameGrabberEthernetComp/_n0408<9>)
+     MUXF7:S->O            1   0.148   0.000  frameGrabberEthernetComp/inst_LPM_MUX9_3_f7 (frameGrabberEthernetComp/inst_LPM_MUX9_3_f7)
+     MUXF8:I1->O           2   0.152   0.616  frameGrabberEthernetComp/inst_LPM_MUX9_2_f8 (phyTXD_1_OBUF)
+     OBUF:I->O                 2.571          phyTXD_1_OBUF (phyTXD<1>)
     ----------------------------------------
-    Total                     10.691ns (4.179ns logic, 6.512ns route)
-                                       (39.1% logic, 60.9% route)
+    Total                      6.869ns (3.523ns logic, 3.346ns route)
+                                       (51.3% logic, 48.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'frameGrabberEthernetComp/ram_parallel_aload'
-  Total number of paths / destination ports: 2712 / 8
+  Total number of paths / destination ports: 808 / 8
 -------------------------------------------------------------------------
-Offset:              11.667ns (Levels of Logic = 8)
+Offset:              8.095ns (Levels of Logic = 6)
   Source:            frameGrabberEthernetComp/fsm_proc.ram_seq_last_addr_0 (LATCH)
   Destination:       phyTXD<7> (PAD)
   Source Clock:      frameGrabberEthernetComp/ram_parallel_aload falling
@@ -726,18 +1054,35 @@ Offset:              11.667ns (Levels of Logic = 8)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q              13   0.498   1.161  frameGrabberEthernetComp/fsm_proc.ram_seq_last_addr_0 (frameGrabberEthernetComp/fsm_proc.ram_seq_last_addr_0)
-     LUT3:I0->O            9   0.205   1.194  frameGrabberEthernetComp/_n0404<3>11 (frameGrabberEthernetComp/_n0404<3>_bdd0)
-     LUT6:I0->O          256   0.203   2.066  frameGrabberEthernetComp/_n0404<5>1 (frameGrabberEthernetComp/_n0404<5>)
-     RAM64X1D:DPRA5->DPO    1   0.205   0.827  frameGrabberEthernetComp/Mram_RAM_SEQ911 (frameGrabberEthernetComp/N524)
-     LUT6:I2->O            1   0.203   0.827  frameGrabberEthernetComp/inst_LPM_MUX6_81 (frameGrabberEthernetComp/inst_LPM_MUX6_81)
-     LUT6:I2->O            1   0.203   0.000  frameGrabberEthernetComp/inst_LPM_MUX6_3 (frameGrabberEthernetComp/inst_LPM_MUX6_3)
-     MUXF7:I1->O           1   0.140   0.580  frameGrabberEthernetComp/inst_LPM_MUX6_2_f7 (frameGrabberEthernetComp/cnt_out[10]_read_port_29_OUT<6>)
-     LUT3:I2->O            1   0.205   0.579  frameGrabberEthernetComp/Mmux_udp_txi_data_data_out71 (phyTXD_6_OBUF)
+     LD:G->Q               7   0.498   1.002  frameGrabberEthernetComp/fsm_proc.ram_seq_last_addr_0 (frameGrabberEthernetComp/fsm_proc.ram_seq_last_addr_0)
+     LUT3:I0->O            6   0.205   1.109  frameGrabberEthernetComp/_n0408<3>11 (frameGrabberEthernetComp/_n0408<3>_bdd0)
+     LUT6:I0->O           32   0.203   1.396  frameGrabberEthernetComp/_n0408<7> (frameGrabberEthernetComp/_n0408<7>)
+     LUT6:I4->O            1   0.203   0.000  frameGrabberEthernetComp/inst_LPM_MUX14_4 (frameGrabberEthernetComp/inst_LPM_MUX14_4)
+     MUXF7:I1->O           1   0.140   0.000  frameGrabberEthernetComp/inst_LPM_MUX14_3_f7 (frameGrabberEthernetComp/inst_LPM_MUX14_3_f7)
+     MUXF8:I1->O           2   0.152   0.616  frameGrabberEthernetComp/inst_LPM_MUX14_2_f8 (phyTXD_6_OBUF)
      OBUF:I->O                 2.571          phyTXD_6_OBUF (phyTXD<6>)
     ----------------------------------------
-    Total                     11.667ns (4.433ns logic, 7.234ns route)
-                                       (38.0% logic, 62.0% route)
+    Total                      8.095ns (3.972ns logic, 4.123ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'bufferAndSendToArduino_comp/send_to_arduino_comp/clk_10kHz'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            bufferAndSendToArduino_comp/send_to_arduino_comp/arduino_tx_comp/txd_out_3 (FF)
+  Destination:       serial_txd_out<3> (PAD)
+  Source Clock:      bufferAndSendToArduino_comp/send_to_arduino_comp/clk_10kHz rising
+
+  Data Path: bufferAndSendToArduino_comp/send_to_arduino_comp/arduino_tx_comp/txd_out_3 to serial_txd_out<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.579  bufferAndSendToArduino_comp/send_to_arduino_comp/arduino_tx_comp/txd_out_3 (bufferAndSendToArduino_comp/send_to_arduino_comp/arduino_tx_comp/txd_out_3)
+     OBUF:I->O                 2.571          serial_txd_out_3_OBUF (serial_txd_out<3>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -762,34 +1107,73 @@ Delay:               4.372ns (Levels of Logic = 2)
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock frameGrabberEthernetComp/ram_parallel_aload
+Clock to Setup on destination clock btnDebounceComp/reset_reg
+--------------------------------------------------------------+---------+---------+---------+---------+
+                                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------------------+---------+---------+---------+---------+
+bufferAndSendToArduino_comp/send_to_arduino_comp/Mram_inc_addr|         |         |    2.984|         |
+phyrxclk                                                      |         |         |    2.967|         |
+--------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bufferAndSendToArduino_comp/send_to_arduino_comp/Mram_inc_addr
+--------------------------------------------------------------+---------+---------+---------+---------+
+                                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------------------+---------+---------+---------+---------+
+bufferAndSendToArduino_comp/send_to_arduino_comp/Mram_inc_addr|    1.961|         |         |         |
+phyrxclk                                                      |    3.306|         |         |         |
+--------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock bufferAndSendToArduino_comp/send_to_arduino_comp/clk_10kHz
+----------------------------------------------------------+---------+---------+---------+---------+
+                                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------------------+---------+---------+---------+---------+
+bufferAndSendToArduino_comp/send_to_arduino_comp/clk_10kHz|    2.048|         |         |         |
+phyrxclk                                                  |    3.047|         |         |         |
+----------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock frameGrabberEthernetComp/cur_state_FSM_FFd1-In1
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-phyrxclk       |         |         |    2.451|         |
+phyrxclk       |         |         |    2.948|         |
 ---------------+---------+---------+---------+---------+
 
+Clock to Setup on destination clock frameGrabberEthernetComp/ram_parallel_aload
+-----------------------------------------------+---------+---------+---------+---------+
+                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------------+---------+---------+---------+---------+
+frameGrabberEthernetComp/cur_state_FSM_FFd1-In1|         |         |    1.877|         |
+phyrxclk                                       |         |         |    2.184|         |
+-----------------------------------------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock phyrxclk
--------------------------------------------+---------+---------+---------+---------+
-                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------------------------------+---------+---------+---------+---------+
-frameGrabberEthernetComp/ram_parallel_aload|         |    5.606|         |         |
-phyrxclk                                   |    4.352|         |         |         |
--------------------------------------------+---------+---------+---------+---------+
+--------------------------------------------------------------+---------+---------+---------+---------+
+                                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------------------+---------+---------+---------+---------+
+btnDebounceComp/reset_reg                                     |         |    1.179|         |         |
+bufferAndSendToArduino_comp/send_to_arduino_comp/Mram_inc_addr|    2.606|         |         |         |
+frameGrabberEthernetComp/cur_state_FSM_FFd1-In1               |         |    3.409|         |         |
+frameGrabberEthernetComp/ram_parallel_aload                   |         |    5.010|         |         |
+phyrxclk                                                      |    4.239|         |         |         |
+--------------------------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.57 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.13 secs
  
 --> 
 
-Total memory usage is 265616 kilobytes
+Total memory usage is 266768 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  121 (   0 filtered)
-Number of infos    :   10 (   0 filtered)
+Number of warnings :  108 (   0 filtered)
+Number of infos    :   20 (   0 filtered)
 

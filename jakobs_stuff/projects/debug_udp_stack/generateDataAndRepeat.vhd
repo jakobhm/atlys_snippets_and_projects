@@ -24,7 +24,7 @@ use work.generateDataAndRepeat_TYPES.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
@@ -109,7 +109,7 @@ begin
 	--        fsmComb : PROCESS          --
 	---------------------------------------
 	-- INPUTS:
-	--    fsmReg_curState
+	--    fsmReg_curStateReg
 	--    counterReg_counterReg
 	-- OUTPUTS:
 	--    fsmComb_nextState
@@ -119,9 +119,9 @@ begin
 	--    fsmComb_data
 	--    fsmComb_dv
 	---------------------------------------
-   fsmComb_proc : process(fsmReg_curState, counterReg_counterReg)
+   fsmComb_proc : process(fsmReg_curStateReg, counterReg_counterReg)
 	begin
-	   case fsmReg_curState is
+	   case fsmReg_curStateReg is
 			when STATE_RESET =>
 			   fsmComb_counterClkEn  <= '1';
 			   fsmComb_counterPre    <= '1';
@@ -182,7 +182,7 @@ begin
 			   fsmComb_counterClkEn  <= '1';
 			   fsmComb_counterPre    <= '1';
 				fsmComb_counterPreVal <= (others=>'0');
-				fsmComb_data          <= X"5D";
+				fsmComb_data          <= X"D5";
 				fsmComb_dv            <= '1';
 				
 				fsmComb_nextState     <= STATE_DATA_OUT;
@@ -201,6 +201,7 @@ begin
 				end if;
 			when others =>
 			   fsmComb_nextState     <= STATE_RESET;
+		end case;
 	end process fsmComb_proc;
 
 	---------------------------------------
@@ -245,7 +246,7 @@ begin
 				end if;
 			end if;
 		end if;
-	end process fsmReg_proc;
+	end process counterReg_proc;
 	
 	
 	--################################--
@@ -258,6 +259,10 @@ begin
 	------ output ------
 	data            <= output_data;
 	dv              <= output_dv;
+   
+   ------ fsmComb ------
+   output_data     <= fsmComb_data;
+   output_dv       <= fsmComb_dv;
 	
 	------ system ------
 	system_areset   <= input_areset;

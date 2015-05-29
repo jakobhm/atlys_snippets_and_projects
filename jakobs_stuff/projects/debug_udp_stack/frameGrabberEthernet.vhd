@@ -139,7 +139,8 @@ begin
 --    ram_parallel_aload
 --    next_state
 ----------------------------------------
-fsm_proc : process(d_seq_in, d_parallel_in, dv, udp_tx_result, udp_tx_data_out_ready, ram_parallel_dout, ram_seq_dout, cur_state, cnt_out)
+fsm_proc : process(d_seq_in, d_parallel_in, dv, udp_tx_result, udp_tx_data_out_ready, ram_parallel_dout, ram_seq_dout, cur_state, cnt_out,
+                   ram_parallel, ram_seq, ram_parallel_din)
    variable ram_seq_last_addr     : std_logic_vector(ram_addr_width-1 downto 0) := (others=>'0');
 begin
    ----------------------
@@ -213,13 +214,22 @@ begin
 				end loop;
 	         ram_parallel_aload           <= '1';
 				ram_seq_last_addr            := cnt_out;
+            
+	         ram_seq_en                   <= '1';
+	         ram_seq_addr                 <= (others=>'0');
 			
 			   next_state                   <= WAIT_FOR_TX_READY;
 			end if;
 		when WAIT_FOR_TX_READY =>
    		udp_txi.hdr.data_length         <= std_logic_vector(unsigned(cnt_out) + 1 + to_unsigned(parallel_read_byte_cnt, 16));
    		--udp_txi.data.data_out_valid <= '1';
-   		udp_txi.data.data_out           <= ram_parallel(0);
+         cnt_apre                     <= '1';  -- preset counter
+			cnt_apre_val                 <= std_logic_vector(to_unsigned(1, ram_addr_width));  -- preset with 1
+         if useParallelRead = true then
+			   udp_txi.data.data_out           <= ram_parallel(0);
+			else
+			   udp_txi.data.data_out           <= ram_seq_dout;
+		   end if;
 			
 			if udp_tx_data_out_ready = '1' then
 			   cnt_en                       <= '1';
@@ -232,8 +242,6 @@ begin
 				end if;
 			else
 			   udp_tx_start                 <= '1';
-			   cnt_apre                     <= '1';  -- preset counter
-				cnt_apre_val                 <= (others=>'0');  -- preset with 0
 				
 				next_state                   <= WAIT_FOR_TX_READY;
 			end if;
@@ -340,7 +348,7 @@ end process counter;
 -- OUTPUTS:
 --    ram_seq_dout
 ----------------------------------------
-ram_seq_proc : process(clk, ram_seq_en, ram_seq_addr, ram_seq_we, ram_seq_we)
+ram_seq_proc : process(clk, ram_seq_en, ram_seq_addr, ram_seq_we)
 begin
    if rising_edge(clk) then
 	   if ram_seq_en = '1' then

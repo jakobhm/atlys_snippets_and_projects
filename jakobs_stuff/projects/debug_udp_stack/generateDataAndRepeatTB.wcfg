@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/generateDataAndRepeatTB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="generatedataandrepeat_types" />
+            <top_module name="generatedataandrepeattb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="udpframegeneratoroutputfile" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/generatedataandrepeattb/areset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">areset</obj_property>
+      <obj_property name="ObjectShortName">areset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generatedataandrepeattb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generatedataandrepeattb/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generatedataandrepeattb/dv" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dv</obj_property>
+      <obj_property name="ObjectShortName">dv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generatedataandrepeattb/generateDataAndRepeat_comp/fsmcomb_nextstate" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">fsmcomb_nextstate</obj_property>
+      <obj_property name="ObjectShortName">fsmcomb_nextstate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generatedataandrepeattb/generateDataAndRepeat_comp/fsmcomb_counterclken" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fsmcomb_counterclken</obj_property>
+      <obj_property name="ObjectShortName">fsmcomb_counterclken</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generatedataandrepeattb/generateDataAndRepeat_comp/fsmcomb_counterpre" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fsmcomb_counterpre</obj_property>
+      <obj_property name="ObjectShortName">fsmcomb_counterpre</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generatedataandrepeattb/generateDataAndRepeat_comp/fsmcomb_counterpreval" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fsmcomb_counterpreval[16:0]</obj_property>
+      <obj_property name="ObjectShortName">fsmcomb_counterpreval[16:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generatedataandrepeattb/generateDataAndRepeat_comp/fsmcomb_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fsmcomb_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fsmcomb_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generatedataandrepeattb/generateDataAndRepeat_comp/fsmcomb_dv" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fsmcomb_dv</obj_property>
+      <obj_property name="ObjectShortName">fsmcomb_dv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generatedataandrepeattb/generateDataAndRepeat_comp/fsmreg_curstatereg" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">fsmreg_curstatereg</obj_property>
+      <obj_property name="ObjectShortName">fsmreg_curstatereg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generatedataandrepeattb/generateDataAndRepeat_comp/counterreg_counterreg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counterreg_counterreg[16:0]</obj_property>
+      <obj_property name="ObjectShortName">counterreg_counterreg[16:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generatedataandrepeattb/generatepreamble_const" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">generatepreamble_const</obj_property>
+      <obj_property name="ObjectShortName">generatepreamble_const</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generatedataandrepeattb/inputclkhz_const" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">inputclkhz_const</obj_property>
+      <obj_property name="ObjectShortName">inputclkhz_const</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generatedataandrepeattb/repeattimems_const" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">repeattimems_const</obj_property>
+      <obj_property name="ObjectShortName">repeattimems_const</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generatedataandrepeattb/generateDataAndRepeat_comp/counterregmaxvalue_const" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">counterregmaxvalue_const</obj_property>
+      <obj_property name="ObjectShortName">counterregmaxvalue_const</obj_property>
+   </wvobject>
+   <wvobject fp_name="/generatedataandrepeattb/generateDataAndRepeat_comp/counterregwidth_const" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">counterregwidth_const</obj_property>
+      <obj_property name="ObjectShortName">counterregwidth_const</obj_property>
+   </wvobject>
+</wave_config>

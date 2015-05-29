@@ -1,205 +1,28 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu May 28 19:42:16 2015
+Fri May 29 14:04:03 2015
 
 drc -z atlysWrapperDebugUDPStack.ncd atlysWrapperDebugUDPStack.pcf
 
+WARNING:PhysDesignRules:372 - Gated clock. Clock net system_areset is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    frameGrabberEthernetComp/ram_parallel_aload is sourced by a combinatorial
    pin. This is not good design practice. Use the CE pin to control the loading
    of data into the flip-flop.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ58_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ10_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ11_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ57_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ60_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ12_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ9_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ6_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ7_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ59_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ27_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ28_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ26_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ2_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ5_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ8_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ62_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ61_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ64_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ63_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ41_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ44_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ42_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ40_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ39_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ38_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ37_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ25_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ4_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ20_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ1_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ30_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ35_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ33_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ36_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ43_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ18_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ19_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ3_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ31_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ23_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ55_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ49_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ52_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ51_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ50_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ45_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ15_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ16_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ13_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ14_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ17_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ29_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ32_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ21_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ24_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ22_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ56_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ53_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ54_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ34_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ46_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ48_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ47_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-DRC detected 0 errors and 65 warnings.  Please see the previously displayed
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   bufferAndSendToArduino_comp/send_to_arduino_comp/Mram_inc_addr is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   frameGrabberEthernetComp/cur_state_FSM_FFd1-In1 is sourced by a combinatorial
+   pin. This is not good design practice. Use the CE pin to control the loading
+   of data into the flip-flop.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+DRC detected 0 errors and 5 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

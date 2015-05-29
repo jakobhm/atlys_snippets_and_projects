@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-MAJESTIX::  Thu May 28 19:41:51 2015
+MAJESTIX::  Fri May 29 14:03:37 2015
 
 par -w -intstyle ise -ol high -mt off atlysWrapperDebugUDPStack_map.ncd
 atlysWrapperDebugUDPStack.ncd atlysWrapperDebugUDPStack.pcf 
@@ -27,36 +27,36 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   187 out of  54,576    1%
-    Number used as Flip Flops:                 173
-    Number used as Latches:                     14
+  Number of Slice Registers:                   176 out of  54,576    1%
+    Number used as Flip Flops:                 155
+    Number used as Latches:                     21
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        825 out of  27,288    3%
-    Number used as logic:                      431 out of  27,288    1%
-      Number using O6 output only:             251
-      Number using O5 output only:             139
-      Number using O5 and O6:                   41
+  Number of Slice LUTs:                        907 out of  27,288    3%
+    Number used as logic:                      389 out of  27,288    1%
+      Number using O6 output only:             248
+      Number using O5 output only:              88
+      Number using O5 and O6:                   53
       Number used as ROM:                        0
-    Number used as Memory:                     384 out of   6,408    5%
-      Number used as Dual Port RAM:            384
-        Number using O6 output only:           384
+    Number used as Memory:                     512 out of   6,408    7%
+      Number used as Dual Port RAM:            512
+        Number using O6 output only:           512
         Number using O5 output only:             0
         Number using O5 and O6:                  0
       Number used as Single Port RAM:            0
       Number used as Shift Register:             0
-    Number used exclusively as route-thrus:     10
+    Number used exclusively as route-thrus:      6
       Number with same-slice register load:      0
-      Number with same-slice carry load:        10
+      Number with same-slice carry load:         6
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   294 out of   6,822    4%
-  Number of MUXCYs used:                       184 out of  13,644    1%
-  Number of LUT Flip Flop pairs used:          832
-    Number with an unused Flip Flop:           645 out of     832   77%
-    Number with an unused LUT:                   7 out of     832    1%
-    Number of fully used LUT-FF pairs:         180 out of     832   21%
+  Number of occupied Slices:                   285 out of   6,822    4%
+  Number of MUXCYs used:                       152 out of  13,644    1%
+  Number of LUT Flip Flop pairs used:          929
+    Number with an unused Flip Flop:           753 out of     929   81%
+    Number with an unused LUT:                  22 out of     929    2%
+    Number of fully used LUT-FF pairs:         154 out of     929   16%
     Number of slice register sites lost
       to control set restrictions:               0 out of  54,576    0%
 
@@ -67,12 +67,13 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        49 out of     218   22%
-    Number of LOCed IOBs:                       49 out of      49  100%
+  Number of bonded IOBs:                        55 out of     218   25%
+    Number of LOCed IOBs:                       55 out of      55  100%
+    IOB Flip Flops:                              1
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of     116    0%
-  Number of RAMB8BWERs:                          0 out of     232    0%
+  Number of RAMB8BWERs:                          1 out of     232    1%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
   Number of BUFG/BUFGMUXs:                       1 out of      16    6%
@@ -81,7 +82,9 @@ Specific Feature Utilization:
   Number of DCM/DCM_CLKGENs:                     0 out of       8    0%
   Number of ILOGIC2/ISERDES2s:                   0 out of     376    0%
   Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     376    0%
-  Number of OLOGIC2/OSERDES2s:                   0 out of     376    0%
+  Number of OLOGIC2/OSERDES2s:                   1 out of     376    1%
+    Number used as OLOGIC2s:                     1
+    Number used as OSERDES2s:                    0
   Number of BSCANs:                              0 out of       4    0%
   Number of BUFHs:                               0 out of     256    0%
   Number of BUFPLLs:                             0 out of       8    0%
@@ -102,88 +105,41 @@ Router effort level (-rl):    High
 Starting initial Timing Analysis.  REAL time: 4 secs 
 Finished initial Timing Analysis.  REAL time: 4 secs 
 
+WARNING:Par:288 - The signal SW<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SW<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SW<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SW<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SW<4>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SW<5>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SW<6>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal SW<7>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal phyrxer_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phyrxdv_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal BTN<1>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal BTN<2>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal BTN<3>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal BTN<4>_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal BTN<5>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phyRXD<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phyRXD<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phyRXD<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phyRXD<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phyRXD<4>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phyRXD<5>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phyRXD<6>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phyRXD<7>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal phymdi_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal phyint_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ58_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ10_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ11_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ57_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ60_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ12_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ9_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ6_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ7_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ59_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ27_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ28_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ26_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ2_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ5_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ8_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ62_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ61_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ64_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ63_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ41_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ44_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ42_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ40_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ39_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ38_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ37_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ25_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ4_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ20_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ1_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ30_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ35_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ33_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ36_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ43_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ18_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ19_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ3_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ31_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ23_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ55_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ49_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ52_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ51_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ50_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ45_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ15_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ16_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ13_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ14_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ17_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ29_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ32_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ21_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ24_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ22_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ56_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ53_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ54_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ34_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ46_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ48_RAMD_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal frameGrabberEthernetComp/Mram_RAM_SEQ47_RAMD_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal phytxclk_IBUF has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 4806 unrouted;      REAL time: 4 secs 
+Phase  1  : 5519 unrouted;      REAL time: 4 secs 
 
-Phase  2  : 4404 unrouted;      REAL time: 5 secs 
+Phase  2  : 5174 unrouted;      REAL time: 5 secs 
 
-Phase  3  : 1179 unrouted;      REAL time: 9 secs 
+Phase  3  : 1116 unrouted;      REAL time: 7 secs 
 
-Phase  4  : 1180 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Phase  4  : 1110 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
 Updating file: atlysWrapperDebugUDPStack.ncd with current fully routed design.
 
@@ -197,9 +153,9 @@ Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 1
 
 Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
-Total REAL time to Router completion: 13 secs 
-Total CPU time to Router completion: 13 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
+Total REAL time to Router completion: 14 secs 
+Total CPU time to Router completion: 14 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -219,8 +175,16 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net phy | SETUP       |         N/A|     6.235ns|     N/A|           0
-  gtxclk_OBUF_BUFG                          | HOLD        |     0.462ns|            |       0|           0
+  Autotimespec constraint for clock net buf | SETUP       |         N/A|     1.880ns|     N/A|           0
+  ferAndSendToArduino_comp/send_to_arduino_ | HOLD        |     0.421ns|            |       0|           0
+  comp/Mram_inc_addr                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net phy | SETUP       |         N/A|     7.891ns|     N/A|           0
+  gtxclk_OBUF_BUFG                          | HOLD        |     0.401ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net buf | SETUP       |         N/A|     0.877ns|     N/A|           0
+  ferAndSendToArduino_comp/send_to_arduino_ | HOLD        |     0.068ns|            |       0|           0
+  comp/clk_10kHz                            | MINPERIOD   |         N/A|     1.639ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -236,18 +200,18 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-WARNING:Par:283 - There are 72 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+WARNING:Par:283 - There are 25 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 13 secs 
-Total CPU time to PAR completion: 13 secs 
+Total REAL time to PAR completion: 14 secs 
+Total CPU time to PAR completion: 14 secs 
 
-Peak Memory Usage:  394 MB
+Peak Memory Usage:  406 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 74
+Number of warning messages: 27
 Number of info messages: 2
 
 Writing design to file atlysWrapperDebugUDPStack.ncd

@@ -263,4 +263,12 @@
 # NET "UartRx" LOC = "A16"; # Bank = 0, Pin name = IO_L66N_SCP0, Sch name = USBB-RXD
 # NET "UartTx" LOC = "B16"; # Bank = 0, Pin name = IO_L66P_SCP1, Sch name = USBB-TXD
 
+# SERIAL INTERFACE TO ARDUINO-BOARD
+ NET "serial_txd_out<0>"   LOC = "T3";  # Bank =  , Pin name =    Sch name = PMOD1 - ARDUINO2
+ NET "serial_txd_out<1>"   LOC = "R3";  # Bank =  , Pin name =    Sch name = PMOD2 - ARDUINO3
+ NET "serial_txd_out<2>"   LOC = "P6";  # Bank =  , Pin name =    Sch name = PMOD3 - ARDUINO4
+ NET "serial_txd_out<3>"   LOC = "N5";  # Bank =  , Pin name =    Sch name = PMOD4 - ARDUINO5
+ NET "serial_clk_out"      LOC = "V9";  # Bank =  , Pin name =    Sch name = PMOD7 - ARDUINO6
+ NET "serial_en_out"       LOC = "T9";  # Bank =  , Pin name =    Sch name = PMOD8 - ARDUINO7
+
 

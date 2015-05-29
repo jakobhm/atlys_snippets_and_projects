@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/sandkasten000/mooreFSMExampleTB_isim_beh.exe" -prj "C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/sandkasten000/mooreFSMExampleTB_beh.prj" "work.mooreFSMExampleTB" 

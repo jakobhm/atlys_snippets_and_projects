@@ -1,84 +1,37 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu May 28 19:42:05 2015
+Fri May 29 14:03:51 2015
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 72 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 25 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
    BTN<1>_IBUF
    BTN<2>_IBUF
    BTN<3>_IBUF
    BTN<4>_IBUF
-   BTN<5>_IBUF
-   frameGrabberEthernetComp/Mram_RAM_SEQ10_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ11_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ12_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ13_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ14_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ15_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ16_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ17_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ18_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ19_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ1_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ20_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ21_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ22_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ23_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ24_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ25_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ26_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ27_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ28_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ29_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ2_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ30_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ31_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ32_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ33_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ34_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ35_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ36_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ37_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ38_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ39_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ3_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ40_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ41_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ42_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ43_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ44_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ45_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ46_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ47_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ48_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ49_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ4_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ50_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ51_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ52_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ53_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ54_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ55_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ56_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ57_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ58_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ59_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ5_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ60_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ61_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ62_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ63_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ64_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ6_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ7_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ8_RAMD_O
-   frameGrabberEthernetComp/Mram_RAM_SEQ9_RAMD_O
+   SW<0>_IBUF
+   SW<1>_IBUF
+   SW<2>_IBUF
+   SW<3>_IBUF
+   SW<4>_IBUF
+   SW<5>_IBUF
+   SW<6>_IBUF
+   SW<7>_IBUF
+   phyRXD<0>_IBUF
+   phyRXD<1>_IBUF
+   phyRXD<2>_IBUF
+   phyRXD<3>_IBUF
+   phyRXD<4>_IBUF
+   phyRXD<5>_IBUF
+   phyRXD<6>_IBUF
+   phyRXD<7>_IBUF
    phyint_IBUF
    phymdi_IBUF
+   phyrxdv_IBUF
    phyrxer_IBUF
+   phytxclk_IBUF
 
 

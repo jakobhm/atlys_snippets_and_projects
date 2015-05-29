@@ -11,7 +11,7 @@ Target Device  : xc6slx45
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu May 28 19:41:38 2015
+Mapped Date    : Fri May 29 14:03:21 2015
 
 Mapping design into LUTs...
 Running directed packing...
@@ -24,289 +24,112 @@ Total REAL time at the beginning of Placer: 5 secs
 Total CPU  time at the beginning of Placer: 5 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:ddc3c7b8) REAL time: 5 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:72a343e) REAL time: 6 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:ddc3c7b8) REAL time: 6 secs 
+Phase 2.7  Design Feasibility Check (Checksum:72a343e) REAL time: 6 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:ddc3c7b8) REAL time: 6 secs 
+Phase 3.31  Local Placement Optimization (Checksum:72a343e) REAL time: 6 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:74adade8) REAL time: 8 secs 
+(Checksum:474fe03e) REAL time: 9 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:74adade8) REAL time: 8 secs 
+Phase 5.36  Local Placement Optimization (Checksum:474fe03e) REAL time: 9 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:74adade8) REAL time: 8 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:474fe03e) REAL time: 9 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:74adade8) REAL time: 8 secs 
+Phase 7.3  Local Placement Optimization (Checksum:474fe03e) REAL time: 9 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:74adade8) REAL time: 8 secs 
+Phase 8.5  Local Placement Optimization (Checksum:474fe03e) REAL time: 9 secs 
 
 Phase 9.8  Global Placement
-........................
-.......................................................
-Phase 9.8  Global Placement (Checksum:5f16f6ac) REAL time: 8 secs 
+..................................
+............................
+Phase 9.8  Global Placement (Checksum:a7dc0fdd) REAL time: 10 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:5f16f6ac) REAL time: 8 secs 
+Phase 10.5  Local Placement Optimization (Checksum:a7dc0fdd) REAL time: 10 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:827919f0) REAL time: 9 secs 
+Phase 11.18  Placement Optimization (Checksum:fd1c233) REAL time: 11 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:827919f0) REAL time: 9 secs 
+Phase 12.5  Local Placement Optimization (Checksum:fd1c233) REAL time: 11 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:757e1212) REAL time: 9 secs 
+Phase 13.34  Placement Validation (Checksum:fd1c233) REAL time: 11 secs 
 
-Total REAL time to Placer completion: 10 secs 
-Total CPU  time to Placer completion: 10 secs 
+Total REAL time to Placer completion: 12 secs 
+Total CPU  time to Placer completion: 12 secs 
 Running post-placement packing...
 Writing output files...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net system_areset is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    frameGrabberEthernetComp/ram_parallel_aload is sourced by a combinatorial
    pin. This is not good design practice. Use the CE pin to control the loading
    of data into the flip-flop.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ58_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ10_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ11_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ57_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ60_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ12_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ9_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ6_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ7_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ59_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ27_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ28_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ26_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ2_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ5_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ8_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ62_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ61_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ64_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ63_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ41_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ44_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ42_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ40_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ39_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ38_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ37_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ25_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ4_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ20_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ1_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ30_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ35_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ33_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ36_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ43_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ18_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ19_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ3_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ31_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ23_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ55_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ49_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ52_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ51_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ50_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ45_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ15_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ16_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ13_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ14_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ17_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ29_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ32_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ21_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ24_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ22_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ56_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ53_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ54_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ34_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ46_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ48_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <frameGrabberEthernetComp/Mram_RAM_SEQ47_RAMD_O> is incomplete. The signal
-   does not drive any load pins in the design.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   bufferAndSendToArduino_comp/send_to_arduino_comp/Mram_inc_addr is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   frameGrabberEthernetComp/cur_state_FSM_FFd1-In1 is sourced by a combinatorial
+   pin. This is not good design practice. Use the CE pin to control the loading
+   of data into the flip-flop.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings:   65
+Number of warnings:    5
 Slice Logic Utilization:
-  Number of Slice Registers:                   187 out of  54,576    1%
-    Number used as Flip Flops:                 173
-    Number used as Latches:                     14
+  Number of Slice Registers:                   176 out of  54,576    1%
+    Number used as Flip Flops:                 155
+    Number used as Latches:                     21
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        825 out of  27,288    3%
-    Number used as logic:                      431 out of  27,288    1%
-      Number using O6 output only:             251
-      Number using O5 output only:             139
-      Number using O5 and O6:                   41
+  Number of Slice LUTs:                        907 out of  27,288    3%
+    Number used as logic:                      389 out of  27,288    1%
+      Number using O6 output only:             248
+      Number using O5 output only:              88
+      Number using O5 and O6:                   53
       Number used as ROM:                        0
-    Number used as Memory:                     384 out of   6,408    5%
-      Number used as Dual Port RAM:            384
-        Number using O6 output only:           384
+    Number used as Memory:                     512 out of   6,408    7%
+      Number used as Dual Port RAM:            512
+        Number using O6 output only:           512
         Number using O5 output only:             0
         Number using O5 and O6:                  0
       Number used as Single Port RAM:            0
       Number used as Shift Register:             0
-    Number used exclusively as route-thrus:     10
+    Number used exclusively as route-thrus:      6
       Number with same-slice register load:      0
-      Number with same-slice carry load:        10
+      Number with same-slice carry load:         6
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   294 out of   6,822    4%
-  Number of MUXCYs used:                       184 out of  13,644    1%
-  Number of LUT Flip Flop pairs used:          832
-    Number with an unused Flip Flop:           645 out of     832   77%
-    Number with an unused LUT:                   7 out of     832    1%
-    Number of fully used LUT-FF pairs:         180 out of     832   21%
-    Number of unique control sets:              46
+  Number of occupied Slices:                   285 out of   6,822    4%
+  Number of MUXCYs used:                       152 out of  13,644    1%
+  Number of LUT Flip Flop pairs used:          929
+    Number with an unused Flip Flop:           753 out of     929   81%
+    Number with an unused LUT:                  22 out of     929    2%
+    Number of fully used LUT-FF pairs:         154 out of     929   16%
+    Number of unique control sets:              33
     Number of slice register sites lost
-      to control set restrictions:             157 out of  54,576    1%
+      to control set restrictions:              80 out of  54,576    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -315,12 +138,13 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        49 out of     218   22%
-    Number of LOCed IOBs:                       49 out of      49  100%
+  Number of bonded IOBs:                        55 out of     218   25%
+    Number of LOCed IOBs:                       55 out of      55  100%
+    IOB Flip Flops:                              1
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of     116    0%
-  Number of RAMB8BWERs:                          0 out of     232    0%
+  Number of RAMB8BWERs:                          1 out of     232    1%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
   Number of BUFG/BUFGMUXs:                       1 out of      16    6%
@@ -329,7 +153,9 @@ Specific Feature Utilization:
   Number of DCM/DCM_CLKGENs:                     0 out of       8    0%
   Number of ILOGIC2/ISERDES2s:                   0 out of     376    0%
   Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     376    0%
-  Number of OLOGIC2/OSERDES2s:                   0 out of     376    0%
+  Number of OLOGIC2/OSERDES2s:                   1 out of     376    1%
+    Number used as OLOGIC2s:                     1
+    Number used as OSERDES2s:                    0
   Number of BSCANs:                              0 out of       4    0%
   Number of BUFHs:                               0 out of     256    0%
   Number of BUFPLLs:                             0 out of       8    0%
@@ -343,11 +169,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                5.27
+Average Fanout of Non-Clock Nets:                8.15
 
-Peak Memory Usage:  439 MB
-Total REAL time to MAP completion:  11 secs 
-Total CPU time to MAP completion:   11 secs 
+Peak Memory Usage:  446 MB
+Total REAL time to MAP completion:  13 secs 
+Total CPU time to MAP completion:   13 secs 
 
 Mapping completed.
 See MAP report file "atlysWrapperDebugUDPStack_map.mrp" for details.

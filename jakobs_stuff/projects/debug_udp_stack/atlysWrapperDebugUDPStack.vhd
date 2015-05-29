@@ -40,7 +40,7 @@ entity atlysWrapperDebugUDPStack is
 		
 		-- Ethernet Mac
 		phyrst            : OUT std_logic;
-      phytxclk          : out std_logic;
+      phytxclk          : in std_logic;
  
       phyTXD            : OUT  std_logic_vector(7 downto 0);
 		phytxen           : OUT  std_logic; 
@@ -55,7 +55,12 @@ entity atlysWrapperDebugUDPStack is
 		
       phymdc            : out std_logic;
       phymdi            : inout std_logic;
-      phyint            : in std_logic
+      phyint            : in std_logic;
+      
+      -- serial interface to arduino-board
+		serial_txd_out    : out std_logic_vector(3 downto 0);
+		serial_clk_out    : out std_logic;
+		serial_en_out     : out std_logic
       );
 end atlysWrapperDebugUDPStack;
 
@@ -65,7 +70,7 @@ architecture Behavioral of atlysWrapperDebugUDPStack is
    --###   CONSTANTS DEFINITIONS   ##--
    --################################--
    ------ frameGrabberEthernet ------
-	constant useParallelRead_const     : boolean := true;
+	constant useParallelRead_const     : boolean := false;
    constant seqReadByteCnt_const      : integer := 2048;
    constant parallelReadByteCnt_const : integer := 11;
    constant ramAddrWidth_const        : integer := 14;
@@ -73,6 +78,11 @@ architecture Behavioral of atlysWrapperDebugUDPStack is
    constant udpDstPort_const          : std_logic_vector(15 downto 0) := X"0102";
    constant udpSrcPort_const          : std_logic_vector(15 downto 0) := X"0304";
    constant udpChecksum_const         : std_logic_vector(15 downto 0) := X"0000";
+   
+   ------ generateDataAndRepeat ------
+   constant generatePreamble_const  : boolean := true;
+   constant inputClkHz_const        : integer := 125000000;
+	constant repeatTimeMS_const      : integer := 1;
 
    --#################################--
    --###   COMPONENT DECLARATIONS   ##--
@@ -118,6 +128,34 @@ architecture Behavioral of atlysWrapperDebugUDPStack is
       udp_tx_data_out_ready   : IN  std_logic
       );
    end component;
+   
+   component generateDataAndRepeat
+   generic(
+      generatePreamble  : boolean;
+      inputClkHz        : integer;
+	   repeatTimeMS      : integer
+      );
+   port(
+      areset            : in  std_logic;
+      clk               : in  std_logic;
+      data              : out std_logic_vector(7 downto 0);
+      dv                : out std_logic
+      );
+   end component;
+   
+	component buffer_and_send_to_arduino
+	port(
+	   clk                  : in std_logic;
+	   reset                : in std_logic;
+	   start                : in std_logic;
+		-- data interface
+		d_in                 : in std_logic_vector(7 downto 0);
+		dv                   : in std_logic;
+		-- arduino interface
+		serial_txd_out       : out std_logic_vector(3 downto 0);
+		serial_en_out        : out std_logic;
+		serial_clk_out       : out std_logic);
+	end component;
 	
    --###############################--
    --###    SIGNAL DECLARATION    ##--
@@ -125,6 +163,7 @@ architecture Behavioral of atlysWrapperDebugUDPStack is
 	------ inputs ------
 	signal input_btn          : std_logic_vector(5 downto 0);
 	signal input_sw           : std_logic_vector(7 downto 0);
+   signal input_phytxclk     : std_logic;
 	signal input_phyRXD		  : std_logic_vector(7 downto 0);
    signal input_phyrxdv		  : std_logic;
 	signal input_phyrxer		  : std_logic;
@@ -135,12 +174,15 @@ architecture Behavioral of atlysWrapperDebugUDPStack is
 	------ outputs ------
 	signal output_led         : std_logic_vector(7 downto 0);
 	signal output_phyrst      : std_logic;
-   signal output_phytxclk    : std_logic;
+   signal output_phytxer     : std_logic;
    signal output_phyTXD      : std_logic_vector(7 downto 0);
 	signal output_phytxen     : std_logic;
-   signal output_phytxer     : std_logic;
 	signal output_phygtxclk   : std_logic;
 	signal output_phymdc      : std_logic;
+   --- serial arduino
+   signal output_serialTxdOut  : std_logic_vector(3 downto 0);
+	signal output_serialClkOut  : std_logic;
+	signal output_serialEnOut   : std_logic;
 	
 	------ btnDebounce ------
 	signal btnDebounce_btn    : std_logic_vector(4 downto 0);
@@ -152,6 +194,15 @@ architecture Behavioral of atlysWrapperDebugUDPStack is
    ------ frameGrabberEthernet ------
    signal frameGrabberEthernet_udpTxStart          : std_logic;
    signal frameGrabberEthernet_udpTxi              : udp_tx_type;
+   
+   ------ generateDataAndRepeat ------
+   signal generateDataAndRepeat_data    : std_logic_vector(7 downto 0);
+   signal generateDataAndRepeat_dv      : std_logic;
+   
+   ------ bufferAndSendToArduino ------
+   signal bufferAndSendToArduino_serialTxdOut  : std_logic_vector(3 downto 0);
+	signal bufferAndSendToArduino_serialEnOut   : std_logic;
+	signal bufferAndSendToArduino_serialClkOut  : std_logic;
 	
 	------ system ------
 	signal system_clk         : std_logic;
@@ -192,19 +243,46 @@ begin
       clk_en                 => '1',
       clk                    => system_clk,
       d_parallel_in          => (others=>'0'),
-      d_seq_in               => input_phyRXD,
-      dv                     => input_phyrxdv,
+      d_seq_in               => generateDataAndRepeat_data,--input_phyRXD,
+      dv                     => generateDataAndRepeat_dv,--input_phyrxdv,
       udp_tx_start           => frameGrabberEthernet_udpTxStart,
       udp_txi                => frameGrabberEthernet_udpTxi,
       udp_tx_result          => (others=>'0'),
       udp_tx_data_out_ready  => '1'
       );
+      
+   generateDataAndRepeat_comp: generateDataAndRepeat
+   generic map(
+      generatePreamble => generatePreamble_const,
+      inputClkHz       => inputClkHz_const,
+      repeatTimeMS     => repeatTimeMS_const
+      )
+   port map(
+      areset           => system_areset,
+      clk              => system_clk,
+      data             => generateDataAndRepeat_data,
+      dv               => generateDataAndRepeat_dv
+      );
+      
+   bufferAndSendToArduino_comp : buffer_and_send_to_arduino
+	port map(
+	   clk            => system_clk,
+	   reset          => system_areset,
+	   start          => btnDebounce_btn(4), -- center
+      -- data interface
+	   d_in           => output_phyTXD,
+	   dv             => output_phytxen,
+	   -- arduino interface
+	   serial_txd_out => bufferAndSendToArduino_serialTxdOut,
+	   serial_en_out  => bufferAndSendToArduino_serialEnOut,
+	   serial_clk_out => bufferAndSendToArduino_serialClkOut);
 				  
 	--################################--
    --###   PARALLEL ASSIGNEMENTS   ##--
    --################################--
 	
-	output_led <= swDebounce_sw;
+	output_led(0) <= btnDebounce_btn(4);
+   output_led(7 downto 1) <= (others=>'0');
 	
 	-- redirect RX-phy-data to TX-phy-output
 	output_phyTXD    <= frameGrabberEthernet_udpTxi.data.data_out;
@@ -212,6 +290,15 @@ begin
 	output_phytxer   <= '0';
 	output_phygtxclk <= input_phyrxclk;
 	output_phyrst    <= '1';
+   
+   ------ generateDataAndRepeat ------
+--   output_phyTXD   <= generateDataAndRepeat_data;
+--   output_phytxen  <= generateDataAndRepeat_dv;
+
+   ------  ------
+   output_serialTxdOut <= bufferAndSendToArduino_serialTxdOut;
+	output_serialEnOut  <= bufferAndSendToArduino_serialEnOut;
+	output_serialClkOut <= bufferAndSendToArduino_serialClkOut;
 	
 	------ system ------
 	system_clk      <= input_phyrxclk;
@@ -220,6 +307,7 @@ begin
 	------ inputs ------
 	input_btn       <= btn;
 	input_sw        <= sw;
+   input_phytxclk  <= phytxclk;
 	input_phyRXD    <= phyRXD;
    input_phyrxdv   <= phyrxdv;
 	input_phyrxer   <= phyrxer;
@@ -230,12 +318,15 @@ begin
 	------ outputs ------
 	led             <= output_led;
 	phyrst          <= output_phyrst;
-   phytxclk        <= output_phytxclk;
    phyTXD          <= output_phyTXD;
 	phytxen         <= output_phytxen;
    phytxer         <= output_phytxer;
 	phygtxclk       <= output_phygtxclk;
 	phymdc          <= output_phymdc;
+   -- arduino serial
+   serial_txd_out  <= output_serialTxdOut;
+   serial_en_out   <= output_serialEnOut;
+   serial_clk_out  <= output_serialClkOut;
 
 end Behavioral;
 

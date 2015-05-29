@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu May 28 19:41:49 2015
+// Written by: Map P.20131013 on Fri May 29 14:03:34 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -25,8 +25,8 @@ COMP "BTN<3>" LOCATE = SITE "P3" LEVEL 1;
 COMP "LED<3>" LOCATE = SITE "L14" LEVEL 1;
 COMP "BTN<4>" LOCATE = SITE "F6" LEVEL 1;
 COMP "LED<4>" LOCATE = SITE "M13" LEVEL 1;
-COMP "BTN<5>" LOCATE = SITE "F5" LEVEL 1;
 COMP "LED<5>" LOCATE = SITE "D4" LEVEL 1;
+COMP "BTN<5>" LOCATE = SITE "F5" LEVEL 1;
 COMP "LED<6>" LOCATE = SITE "P16" LEVEL 1;
 COMP "LED<7>" LOCATE = SITE "N12" LEVEL 1;
 COMP "phyRXD<0>" LOCATE = SITE "G16" LEVEL 1;
@@ -45,12 +45,18 @@ COMP "phyTXD<4>" LOCATE = SITE "J13" LEVEL 1;
 COMP "phyTXD<5>" LOCATE = SITE "G14" LEVEL 1;
 COMP "phyTXD<6>" LOCATE = SITE "H12" LEVEL 1;
 COMP "phyTXD<7>" LOCATE = SITE "K12" LEVEL 1;
+COMP "serial_txd_out<0>" LOCATE = SITE "T3" LEVEL 1;
+COMP "serial_txd_out<1>" LOCATE = SITE "R3" LEVEL 1;
+COMP "serial_txd_out<2>" LOCATE = SITE "P6" LEVEL 1;
+COMP "serial_txd_out<3>" LOCATE = SITE "N5" LEVEL 1;
 COMP "phygtxclk" LOCATE = SITE "L12" LEVEL 1;
 COMP "phymdc" LOCATE = SITE "F16" LEVEL 1;
 COMP "phymdi" LOCATE = SITE "N17" LEVEL 1;
 COMP "phyint" LOCATE = SITE "L16" LEVEL 1;
 COMP "phyrst" LOCATE = SITE "G13" LEVEL 1;
+COMP "serial_clk_out" LOCATE = SITE "V9" LEVEL 1;
 COMP "phyrxclk" LOCATE = SITE "K15" LEVEL 1;
 COMP "phytxclk" LOCATE = SITE "K16" LEVEL 1;
+COMP "serial_en_out" LOCATE = SITE "T9" LEVEL 1;
 SCHEMATIC END;
 

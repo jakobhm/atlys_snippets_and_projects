@@ -1,0 +1,30 @@
+Command line:
+   atlysWrapperDebugUDPStackTB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60864
+
+Fri May 29 14:08:56 2015
+
+
+ Elaboration Time: 0.0624 sec
+
+ Current Memory Usage: 698.085 Meg
+
+ Total Signals          : 239
+ Total Nets             : 19495
+ Total Signal Drivers   : 147
+ Total Blocks           : 20
+ Total Primitive Blocks : 15
+ Total Processes        : 114
+ Total Traceable Variables  : 66
+ Total Scalar Nets and Variables : 20932
+Total Line Count : 498
+Total Line Count : 498
+
+ Total Simulation Time: 7.94045 sec
+
+ Current Memory Usage: 698.085 Meg
+
+Fri May 29 14:17:01 2015
+
