@@ -42,6 +42,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1432904871" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1432904871">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1432904886" xil_pn:in_ck="-1052817230075294615" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1432904886">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -85,6 +86,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -96,6 +98,7 @@
     <transform xil_pn:end_ts="1432904890" xil_pn:in_ck="873634468515132825" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2047179876428329933" xil_pn:start_ts="1432904890">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
