@@ -16,6 +16,7 @@
 -- 
 -- Revision:
 -- Revision 0.01 - File Created
+-- Revision 0.02 - compatible to mooreFSMExample Rev 1.02
 -- Additional Comments:
 --
 -- Notes: 
@@ -41,14 +42,14 @@ ARCHITECTURE behavior OF mooreFSMExampleTB IS
  
     COMPONENT mooreFSMExample
     PORT(
-         areset : IN  std_logic;
+         reset : IN  std_logic;
          clk : IN  std_logic
         );
     END COMPONENT;
     
 
    --Inputs
-   signal areset : std_logic := '0';
+   signal reset : std_logic := '0';
    signal clk : std_logic := '0';
 
    -- Clock period definitions
@@ -58,7 +59,7 @@ BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: mooreFSMExample PORT MAP (
-          areset => areset,
+          reset => reset,
           clk => clk
         );
 

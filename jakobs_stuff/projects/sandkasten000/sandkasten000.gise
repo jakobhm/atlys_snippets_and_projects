@@ -29,12 +29,16 @@
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mooreFSMExample.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="mooreFSMExample.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="mooreFSMExample.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mooreFSMExampleTB_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mooreFSMExampleTB_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="mooreFSMExampleTB_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mooreFSMExampleTB_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mooreFSMExample_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mooreFSMExample_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="mooreFSMExample_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mooreFSMExample_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
@@ -44,24 +48,24 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1432904886" xil_pn:in_ck="-1052817230075294615" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1432904886">
+    <transform xil_pn:end_ts="1433173588" xil_pn:in_ck="3001643229674671426" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1433173588">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../../our_stuff/snippets/mooreFSMExample/mooreFSMExample.vhd"/>
+      <outfile xil_pn:name="../../../our_stuff/snippets/mooreFSMExample/mooreFSMExampleTB.vhd"/>
       <outfile xil_pn:name="BRAM.vhd"/>
       <outfile xil_pn:name="DRAMParallelInSeqOut.vhd"/>
-      <outfile xil_pn:name="mooreFSMExample.vhd"/>
-      <outfile xil_pn:name="mooreFSMExampleTB.vhd"/>
+      <outfile xil_pn:name="frameGrabberEthernet.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1432904886" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="520820781026310080" xil_pn:start_ts="1432904886">
+    <transform xil_pn:end_ts="1433173757" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2699972456278666135" xil_pn:start_ts="1433173757">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1432904886" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8046986027126737982" xil_pn:start_ts="1432904886">
+    <transform xil_pn:end_ts="1433173757" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8253229098910101995" xil_pn:start_ts="1433173757">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -69,7 +73,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1432904886" xil_pn:in_ck="-1052817230075294615" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1432904886">
+    <transform xil_pn:end_ts="1433173592" xil_pn:in_ck="3001643229674671426" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1433173592">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -77,33 +81,36 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../../our_stuff/snippets/mooreFSMExample/mooreFSMExample.vhd"/>
+      <outfile xil_pn:name="../../../our_stuff/snippets/mooreFSMExample/mooreFSMExampleTB.vhd"/>
       <outfile xil_pn:name="BRAM.vhd"/>
       <outfile xil_pn:name="DRAMParallelInSeqOut.vhd"/>
-      <outfile xil_pn:name="mooreFSMExample.vhd"/>
-      <outfile xil_pn:name="mooreFSMExampleTB.vhd"/>
+      <outfile xil_pn:name="frameGrabberEthernet.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1432904890" xil_pn:in_ck="-1052817230075294615" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2986930300064037792" xil_pn:start_ts="1432904886">
+    <transform xil_pn:end_ts="1433173761" xil_pn:in_ck="3001643229674671426" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6928997797857480865" xil_pn:start_ts="1433173757">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="mooreFSMExampleTB_beh.prj"/>
-      <outfile xil_pn:name="mooreFSMExampleTB_isim_beh.exe"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="mooreFSMExample_beh.prj"/>
+      <outfile xil_pn:name="mooreFSMExample_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1432904890" xil_pn:in_ck="873634468515132825" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2047179876428329933" xil_pn:start_ts="1432904890">
+    <transform xil_pn:end_ts="1433173761" xil_pn:in_ck="2369984695804792540" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1324190101493911470" xil_pn:start_ts="1433173761">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="mooreFSMExampleTB_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="mooreFSMExample_isim_beh.wdb"/>
     </transform>
   </transforms>
 

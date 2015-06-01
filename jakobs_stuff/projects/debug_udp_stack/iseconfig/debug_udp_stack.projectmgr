@@ -12,13 +12,13 @@
          <ClosedNode>/buffer_and_send_to_arduino - Behavioral C:|Users|Jakob Wittmann|Documents|GitHub|atlys_snippets_and_projects|jakobs_stuff|projects|debug_udp_stack|buffer_and_send_to_arduino.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>atlysWrapperDebugUDPStack - Behavioral (C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/atlysWrapperDebugUDPStack.vhd)</SelectedItem>
+         <SelectedItem>mac1gTx - Behavioral (C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/mac1gTx.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000029c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000029c0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>atlysWrapperDebugUDPStack - Behavioral (C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/atlysWrapperDebugUDPStack.vhd)</CurrentItem>
+      <CurrentItem>mac1gTx - Behavioral (C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/mac1gTx.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -41,7 +41,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000032b000000040101000100000000000000000000000064ffffffff0000008100000000000000040000010c0000000100000000000000240000000100000000000000660000000100000000000001950000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000031a000000040101000100000000000000000000000064ffffffff0000008100000000000000040000010c0000000100000000000000240000000100000000000000660000000100000000000001840000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>arp_types.vhd</CurrentItem>
    </ItemView>
@@ -49,14 +49,12 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>udpFrameGeneratorOutputFile.vhd</SelectedItem>
-      </SelectedItems>
+      <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000191000000010001000100000000000000000000000064ffffffff000000810000000000000001000001910000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>udpFrameGeneratorOutputFile.vhd</CurrentItem>
+      <CurrentItem>mac_tx_types.vhd</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -69,20 +67,6 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Generate Programming File</SelectedItem>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000191000000010000000100000000000000000000000064ffffffff000000810000000000000001000001910000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Generate Programming File</CurrentItem>
-   </ItemView>
-   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
-      <ClosedNodes>
-         <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>User Constraints</ClosedNode>
-      </ClosedNodes>
-      <SelectedItems>
          <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
@@ -91,15 +75,34 @@
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000191000000010000000100000000000000000000000064ffffffff000000810000000000000001000001910000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/atlysWrapperDebugUDPStackTB - behavior C:|Users|Jakob Wittmann|Documents|GitHub|atlys_snippets_and_projects|jakobs_stuff|projects|debug_udp_stack|atlysWrapperDebugUDPStackTB.vhd/uut - atlysWrapperDebugUDPStack - Behavioral</ClosedNode>
          <ClosedNode>/fff - behavior C:|Users|Jakob Wittmann|Dropbox|ISE_Projects|debug_udp_stack|fff.vhd</ClosedNode>
+         <ClosedNode>/frameGrabberEthernetTB - behavior C:|Users|Jakob Wittmann|Documents|GitHub|atlys_snippets_and_projects|jakobs_stuff|snippets|frameGrabberEthernet|frameGrabberEthernetTB.vhd</ClosedNode>
+         <ClosedNode>/generateDataAndRepeatTB - behavior C:|Users|Jakob Wittmann|Documents|GitHub|atlys_snippets_and_projects|jakobs_stuff|projects|debug_udp_stack|generateDataAndRepeatTB.vhd</ClosedNode>
       </ClosedNodes>
-      <SelectedItems/>
-      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
+      <SelectedItems>
+         <SelectedItem>atlysWrapperDebugUDPStackTB - behavior (C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/atlysWrapperDebugUDPStackTB.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002b0000000020000000000000000000000000200000064ffffffff000000810000000300000002000002b00000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000210000000020000000000000000000000000200000064ffffffff000000810000000300000002000002100000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>atlysWrapperDebugUDPStackTB - behavior (C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/debug_udp_stack/atlysWrapperDebugUDPStackTB.vhd)</CurrentItem>
    </ItemView>
@@ -131,7 +134,7 @@
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_DECL" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>

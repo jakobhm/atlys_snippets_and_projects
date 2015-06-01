@@ -2,12 +2,12 @@ Command line:
    mooreFSMExampleTB_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  61839
+     -socket  51580
 
-Fri May 29 15:08:11 2015
+Mon Jun 01 17:46:42 2015
 
 
- Elaboration Time: 0.031201 sec
+ Elaboration Time: 0.0468 sec
 
  Current Memory Usage: 668.783 Meg
 
@@ -16,16 +16,16 @@ Fri May 29 15:08:11 2015
  Total Signal Drivers   : 11
  Total Blocks           : 4
  Total Primitive Blocks : 3
- Total Processes        : 9
+ Total Processes        : 10
  Total Traceable Variables  : 15
  Total Scalar Nets and Variables : 527
-Total Line Count : 31
-Total Line Count : 31
-Total Line Count : 31
+Total Line Count : 36
+Total Line Count : 36
+Total Line Count : 36
 
- Total Simulation Time: 0.795605 sec
+ Total Simulation Time: 0.811205 sec
 
- Current Memory Usage: 826.069 Meg
+ Current Memory Usage: 668.783 Meg
 
-Fri May 29 15:10:09 2015
+Mon Jun 01 17:48:58 2015
 

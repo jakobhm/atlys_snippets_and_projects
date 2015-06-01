@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/jakobs_stuff/projects/sandkasten000/mooreFSMExampleTB.vhd";
+static const char *ng0 = "C:/Users/Jakob Wittmann/Documents/GitHub/atlys_snippets_and_projects/our_stuff/snippets/mooreFSMExample/mooreFSMExampleTB.vhd";
 
 
 

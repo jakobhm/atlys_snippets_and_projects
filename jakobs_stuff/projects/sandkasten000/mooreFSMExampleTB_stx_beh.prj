@@ -1,0 +1,2 @@
+vhdl isim_temp "../../../our_stuff/snippets/mooreFSMExample/mooreFSMExample.vhd"
+vhdl isim_temp "../../../our_stuff/snippets/mooreFSMExample/mooreFSMExampleTB.vhd"

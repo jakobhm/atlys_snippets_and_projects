@@ -180,14 +180,14 @@ begin
 				ctr_state_s <= COUNT;
 				state_next_s <= PREAMBLE;
 				if global_ctr_s = SFD_POS-1	then 
-					state_next_s <= SFD;			
+					state_next_s <= SFD;
 				end if;
 			when SFD 				=>
 				state_next_s <= ETH_HEADER;
 				if mk_hdr_mode_s = '0' then--and mac_tx_tfirst_s = '1'	then 
 					state_next_s <= DATA_FIRST;			
-				elsif mk_hdr_mode_s = '0' then 	-- unnuetze abfrage
-					state_next_s <= ERROR;	
+				--elsif mk_hdr_mode_s = '0' then 	-- unnuetze abfrage
+					--state_next_s <= ERROR;	
 				end if;
 			when ETH_HEADER 			=>
 				ctr_state_s <= COUNT;
@@ -195,7 +195,7 @@ begin
 				if global_ctr_s = DATA_FIELD_POS-1 then --and mac_tx_tfirst_s = '1' then ??? geht noch nicht
 					state_next_s <= DATA_FIRST;
 				else 
-					state_next_s <= ERROR;	
+					state_next_s <= ERROR;
 				end if;
 			when DATA_FIRST 			=>
 				ctr_state_s <= COUNT;
@@ -418,7 +418,7 @@ begin
 	ctr_reg : process(rst, en, ctr_state_s, clk_125mhz)
 	begin
 		if rst = '1' then null;
-			global_ctr_s <= 0;
+			--global_ctr_s <= 0;
 		elsif en = '0' then null;
 		elsif rising_edge(clk_125mhz) then
 			case ctr_state_s is
@@ -426,7 +426,7 @@ begin
 				when COUNT	 => 	global_ctr_s  	<= global_ctr_s + 1;
 				when others  => 	null;
 			end case;
-		end if;	
+		end if;
 	end process ctr_reg;
 	
 	-- delay the PHY output

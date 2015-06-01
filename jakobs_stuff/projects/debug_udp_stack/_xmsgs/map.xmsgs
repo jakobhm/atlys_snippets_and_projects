@@ -8,7 +8,7 @@
 <msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">BTN&lt;4&gt;_IBUF</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">152</arg> more times for the following (max. 5 shown):
+<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">143</arg> more times for the following (max. 5 shown):
 <arg fmt="%s" index="3">BTN&lt;3&gt;_IBUF,
 BTN&lt;2&gt;_IBUF,
 BTN&lt;1&gt;_IBUF,
@@ -35,13 +35,13 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="info" file="Pack" num="1650" delta="old" >Map created a placed design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">system_areset</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">frameGrabberEthernetComp/ram_parallel_aload</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">bufferAndSendToArduino_comp/send_to_arduino_comp/Mram_inc_addr</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">system_areset</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">frameGrabberEthernetComp/cur_state_FSM_FFd1-In1</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.

@@ -270,8 +270,8 @@ begin
 	   reset          => system_areset,
 	   start          => btnDebounce_btn(4), -- center
       -- data interface
-	   d_in           => output_phyTXD,
-	   dv             => output_phytxen,
+	   d_in           => input_phyRXD,--output_phyTXD,
+	   dv             => input_phyrxdv,--output_phytxen,
 	   -- arduino interface
 	   serial_txd_out => bufferAndSendToArduino_serialTxdOut,
 	   serial_en_out  => bufferAndSendToArduino_serialEnOut,

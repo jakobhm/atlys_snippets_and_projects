@@ -1,19 +1,19 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri May 29 14:04:03 2015
+Mon Jun 01 15:03:55 2015
 
 drc -z atlysWrapperDebugUDPStack.ncd atlysWrapperDebugUDPStack.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net system_areset is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    frameGrabberEthernetComp/ram_parallel_aload is sourced by a combinatorial
    pin. This is not good design practice. Use the CE pin to control the loading
    of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    bufferAndSendToArduino_comp/send_to_arduino_comp/Mram_inc_addr is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net system_areset is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net

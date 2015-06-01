@@ -38,8 +38,16 @@ Setup/Hold to clock phyrxclk
             |Max Setup to|  Process   |Max Hold to |  Process   |                   | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)  | Phase  |
 ------------+------------+------------+------------+------------+-------------------+--------+
-BTN<0>      |    2.376(R)|      SLOW  |   -1.095(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
-BTN<5>      |    1.570(R)|      SLOW  |   -0.201(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+BTN<0>      |    1.938(R)|      SLOW  |   -0.533(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+BTN<5>      |    1.454(R)|      SLOW  |    0.029(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+phyRXD<0>   |    0.351(R)|      FAST  |    0.396(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+phyRXD<1>   |    0.412(R)|      FAST  |    0.325(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+phyRXD<2>   |    1.068(R)|      SLOW  |   -0.561(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+phyRXD<3>   |    3.085(R)|      SLOW  |   -1.933(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyRXD<4>   |    1.481(R)|      SLOW  |   -0.964(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+phyRXD<5>   |    1.186(R)|      SLOW  |   -0.691(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+phyRXD<6>   |    1.205(R)|      SLOW  |   -0.702(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
+phyRXD<7>   |    1.296(R)|      SLOW  |   -0.786(R)|      SLOW  |phygtxclk_OBUF_BUFG|   0.000|
 ------------+------------+------------+------------+------------+-------------------+--------+
 
 Clock phyrxclk to Pad
@@ -47,17 +55,17 @@ Clock phyrxclk to Pad
               |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                   | Clock  |
 Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)  | Phase  |
 --------------+-----------------+------------+-----------------+------------+-------------------+--------+
-LED<0>        |        11.951(R)|      SLOW  |         6.771(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
-phyTXD<0>     |        16.408(R)|      SLOW  |         5.785(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
-phyTXD<1>     |        16.063(R)|      SLOW  |         6.184(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
-phyTXD<2>     |        15.113(R)|      SLOW  |         5.838(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
-phyTXD<3>     |        14.900(R)|      SLOW  |         6.059(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
-phyTXD<4>     |        13.922(R)|      SLOW  |         4.862(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
-phyTXD<5>     |        15.399(R)|      SLOW  |         5.517(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
-phyTXD<6>     |        14.875(R)|      SLOW  |         5.230(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
-phyTXD<7>     |        16.601(R)|      SLOW  |         5.784(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
-phytxen       |        10.123(R)|      SLOW  |         5.055(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
-serial_clk_out|         8.904(R)|      SLOW  |         4.784(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+LED<0>        |        12.376(R)|      SLOW  |         7.085(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyTXD<0>     |        17.256(R)|      SLOW  |         5.294(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyTXD<1>     |        17.541(R)|      SLOW  |         4.870(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyTXD<2>     |        18.934(R)|      SLOW  |         5.150(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyTXD<3>     |        19.903(R)|      SLOW  |         5.569(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyTXD<4>     |        15.400(R)|      SLOW  |         4.533(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyTXD<5>     |        15.211(R)|      SLOW  |         4.891(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyTXD<6>     |        14.890(R)|      SLOW  |         4.478(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phyTXD<7>     |        18.264(R)|      SLOW  |         5.091(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+phytxen       |        10.500(R)|      SLOW  |         5.162(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
+serial_clk_out|         9.563(R)|      SLOW  |         5.214(R)|      FAST  |phygtxclk_OBUF_BUFG|   0.000|
 --------------+-----------------+------------+-----------------+------------+-------------------+--------+
 
 Clock to Setup on destination clock phyrxclk
@@ -65,7 +73,7 @@ Clock to Setup on destination clock phyrxclk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-phyrxclk       |    7.891|         |         |         |
+phyrxclk       |    7.940|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
@@ -76,14 +84,14 @@ phyrxclk       |phygtxclk      |    5.248|
 ---------------+---------------+---------+
 
 
-Analysis completed Fri May 29 14:03:58 2015 
+Analysis completed Mon Jun 01 15:03:49 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 285 MB
+Peak Memory Usage: 282 MB
 
 
 
