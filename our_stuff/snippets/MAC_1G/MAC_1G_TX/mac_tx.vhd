@@ -179,12 +179,16 @@ begin
 			when PREAMBLE 			=>
 				ctr_state_s <= COUNT;
 				state_next_s <= PREAMBLE;
-				if global_ctr_s = SFD_POS-1	then 
+            if mac_tx_tvalid_s = '0' then
+               state_next_s <= ERROR;
+            elsif global_ctr_s = SFD_POS-1	then 
 					state_next_s <= SFD;
 				end if;
 			when SFD 				=>
 				state_next_s <= ETH_HEADER;
-				if mk_hdr_mode_s = '0' then--and mac_tx_tfirst_s = '1'	then 
+				if mac_tx_tvalid_s = '0' then
+               state_next_s <= ERROR;
+            elsif mk_hdr_mode_s = '0' then--and mac_tx_tfirst_s = '1'	then 
 					state_next_s <= DATA_FIRST;			
 				--elsif mk_hdr_mode_s = '0' then 	-- unnuetze abfrage
 					--state_next_s <= ERROR;	
@@ -192,7 +196,9 @@ begin
 			when ETH_HEADER 			=>
 				ctr_state_s <= COUNT;
 				state_next_s <= ETH_HEADER;
-				if global_ctr_s = DATA_FIELD_POS-1 then --and mac_tx_tfirst_s = '1' then ??? geht noch nicht
+				if mac_tx_tvalid_s = '0' then
+               state_next_s <= ERROR;
+            elsif global_ctr_s = DATA_FIELD_POS-1 then --and mac_tx_tfirst_s = '1' then ??? geht noch nicht
 					state_next_s <= DATA_FIRST;
 				else 
 					state_next_s <= ERROR;
@@ -200,13 +206,17 @@ begin
 			when DATA_FIRST 			=>
 				ctr_state_s <= COUNT;
 				state_next_s <= DATA_SMALL;
-				if bufferd_data_is_last_s = '1' then
+				if mac_tx_tvalid_s = '0' then
+               state_next_s <= ERROR;
+            elsif bufferd_data_is_last_s = '1' then
 					state_next_s <= PADDING;
 				end if;
 			when DATA_SMALL			=>
 				ctr_state_s <= COUNT;
 				state_next_s <= DATA_SMALL;
-				if mac_tx_tlast_s = '1' then
+				if mac_tx_tvalid_s = '0' then
+               state_next_s <= ERROR;
+            elsif mac_tx_tlast_s = '1' then
 					state_next_s <= PADDING;
 				elsif global_ctr_s = ETH_FRAME_MIN_LEN-5 then
 					state_next_s <= DATA_COMMON;
@@ -214,7 +224,9 @@ begin
 			when DATA_COMMON			=>
 				ctr_state_s <= COUNT;
 				state_next_s <= DATA_COMMON;
-				if mac_tx_tlast_s = '1' then
+				if mac_tx_tvalid_s = '0' then
+               state_next_s <= ERROR;
+            elsif mac_tx_tlast_s = '1' then
 					state_next_s <= CRC3;
 				elsif global_ctr_s = ETH_FRAME_MAX_LEN-5 then
 					state_next_s <= DATA_JUMBO;
@@ -222,7 +234,9 @@ begin
 			when DATA_JUMBO			=>
 				ctr_state_s <= COUNT;
 				state_next_s <= DATA_JUMBO;
-				if mac_tx_tlast_s = '1' then
+				if mac_tx_tvalid_s = '0' then
+               state_next_s <= ERROR;
+            elsif mac_tx_tlast_s = '1' then
 					state_next_s <= CRC3;			
 				end if;
 			when PADDING			=>

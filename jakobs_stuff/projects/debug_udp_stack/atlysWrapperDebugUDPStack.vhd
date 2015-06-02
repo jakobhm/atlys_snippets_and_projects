@@ -285,15 +285,15 @@ begin
    output_led(7 downto 1) <= (others=>'0');
 	
 	-- redirect RX-phy-data to TX-phy-output
-	output_phyTXD    <= frameGrabberEthernet_udpTxi.data.data_out;
-	output_phytxen   <= frameGrabberEthernet_udpTxi.data.data_out_valid;
+--	output_phyTXD    <= frameGrabberEthernet_udpTxi.data.data_out;
+--	output_phytxen   <= frameGrabberEthernet_udpTxi.data.data_out_valid;
 	output_phytxer   <= '0';
 	output_phygtxclk <= input_phyrxclk;
 	output_phyrst    <= '1';
    
    ------ generateDataAndRepeat ------
---   output_phyTXD   <= generateDataAndRepeat_data;
---   output_phytxen  <= generateDataAndRepeat_dv;
+   output_phyTXD   <= generateDataAndRepeat_data;
+   output_phytxen  <= generateDataAndRepeat_dv;
 
    ------  ------
    output_serialTxdOut <= bufferAndSendToArduino_serialTxdOut;
